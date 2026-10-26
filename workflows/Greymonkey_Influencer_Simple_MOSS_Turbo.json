@@ -1,0 +1,917 @@
+{
+  "last_node_id": 1021,
+  "last_link_id": 17,
+  "nodes": [
+    {
+      "id": 1001,
+      "type": "GreymonkeyInfluencerSettingsV2",
+      "pos": [
+        30,
+        70
+      ],
+      "size": [
+        350,
+        220
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "creator_settings",
+          "type": "GREYMONKEY_CREATOR",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyInfluencerSettingsV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "lifestyle",
+            "presentation": "phone_candid",
+            "expression_direction": "soft_smile",
+            "body_direction": "relaxed",
+            "wardrobe_direction": "casual",
+            "item_policy": "none"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "lifestyle",
+        "phone_candid",
+        "soft_smile",
+        "relaxed",
+        "casual",
+        "none"
+      ],
+      "title": "01 · Creator direction",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1002,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        370
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Age [subject:subject_cat_age]",
+            "option": "Age · 30 Years Old [age_30_years]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Age [subject:subject_cat_age]",
+        "Age · 30 Years Old [age_30_years]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Age · 30 years",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1003,
+      "type": "GreymonkeySceneSubjectV2",
+      "pos": [
+        410,
+        70
+      ],
+      "size": [
+        350,
+        530
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 1
+        },
+        {
+          "name": "creator_settings",
+          "type": "GREYMONKEY_CREATOR",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "scene",
+          "type": "GREYMONKEY_SCENE",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySceneSubjectV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "subject_type": "person",
+            "identity": "Human [species_human]",
+            "gender": "Female / woman",
+            "ethnicity": "Japanese [ethnicity_japanese]",
+            "hair_color": "Random",
+            "hair_length": "Random",
+            "magic": "None",
+            "position": "unspecified",
+            "relative_size": "unspecified",
+            "related_object": "None",
+            "relationship": "none",
+            "target_subject": 1,
+            "subject_style": "Influencer"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "person",
+        "Human [species_human]",
+        "Female / woman",
+        "Japanese [ethnicity_japanese]",
+        "Random",
+        "Random",
+        "None",
+        "unspecified",
+        "unspecified",
+        "None",
+        "none",
+        1,
+        "Influencer"
+      ],
+      "title": "02 · Person",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1004,
+      "type": "GreymonkeyCameraStyleV2",
+      "pos": [
+        810,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "capture_settings",
+          "type": "GREYMONKEY_CAPTURE",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyCameraStyleV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "preset": "Clean phone photograph",
+            "capture_method": "Rear-camera candid",
+            "framing": "Medium shot",
+            "noise": "Mild",
+            "focus": "Preset",
+            "device": "Modern iPhone",
+            "lens": "Standard wide",
+            "flash": "Soft window light",
+            "processing": "Natural processing",
+            "white_balance": "Neutral",
+            "compression": "Clean",
+            "camera_angle": "Eye level"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Clean phone photograph",
+        "Rear-camera candid",
+        "Medium shot",
+        "Mild",
+        "Preset",
+        "Modern iPhone",
+        "Standard wide",
+        "Soft window light",
+        "Natural processing",
+        "Neutral",
+        "Clean",
+        "Eye level"
+      ],
+      "title": "03 · Camera style",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1005,
+      "type": "GreymonkeyPromptGeneratorV2",
+      "pos": [
+        1210,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "scene",
+          "type": "GREYMONKEY_SCENE",
+          "link": 3
+        },
+        {
+          "name": "capture_settings",
+          "type": "GREYMONKEY_CAPTURE",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "prompt_seed",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "generation_info",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "generation_result",
+          "type": "GREYMONKEY_RESULT",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyPromptGeneratorV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "model_id": "moss-image-sft",
+            "content_mode": "Safe",
+            "generation_theme": "influencer",
+            "art_style": "Random",
+            "detail_level": "standard",
+            "background": "environment",
+            "pose_mode": "random",
+            "aspect_ratio": "3:4",
+            "quality": "recommended",
+            "seed": 260101,
+            "control_after_generate": "fixed"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "moss-image-sft",
+        "Safe",
+        "influencer",
+        "Random",
+        "standard",
+        "environment",
+        "random",
+        "3:4",
+        "recommended",
+        260101,
+        "fixed"
+      ],
+      "title": "04 · Generate prompt",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1006,
+      "type": "UNETLoader",
+      "pos": [
+        410,
+        730
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "moss\\moss_image_sft_int8_convrot.safetensors",
+        "default"
+      ],
+      "title": "Original MOSS Image SFT · native loader"
+    },
+    {
+      "id": 1007,
+      "type": "CLIPLoader",
+      "pos": [
+        810,
+        730
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6,
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3.5_9b_moss_image_sft_w4a8_gptq.safetensors",
+        "moss_image",
+        "default"
+      ],
+      "title": "MOSS text encoder · native CLIP"
+    },
+    {
+      "id": 1008,
+      "type": "VAELoader",
+      "pos": [
+        1210,
+        1060
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "moss_image_vae_bf16.safetensors"
+      ],
+      "title": "MOSS VAE"
+    },
+    {
+      "id": 1010,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1630,
+        70
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [],
+      "title": "Positive prompt"
+    },
+    {
+      "id": 1011,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1630,
+        310
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [],
+      "title": "Negative prompt · inactive at CFG 1"
+    },
+    {
+      "id": 1012,
+      "type": "EmptyFlux2LatentImage",
+      "pos": [
+        1630,
+        690
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyFlux2LatentImage"
+      },
+      "widgets_values": [
+        768,
+        1024,
+        1
+      ],
+      "title": "Portrait canvas · 768 × 1024"
+    },
+    {
+      "id": 1013,
+      "type": "KSampler",
+      "pos": [
+        2030,
+        70
+      ],
+      "size": [
+        350,
+        350
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 9
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 10
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 11
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        260101,
+        "fixed",
+        8,
+        1.0,
+        "euler",
+        "simple",
+        1.0
+      ],
+      "title": "05 · MOSS SFT + DMD · 8 steps / CFG 1"
+    },
+    {
+      "id": 1014,
+      "type": "VAEDecode",
+      "pos": [
+        2030,
+        630
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 13
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": [],
+      "title": "Decode image"
+    },
+    {
+      "id": 1015,
+      "type": "GreymonkeySaveImageV2",
+      "pos": [
+        2430,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "name": "generation_result",
+          "type": "GREYMONKEY_RESULT",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "saved_files_info",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySaveImageV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "filename_prefix": "Greymonkey/Influencer_Simple_MOSS_Turbo",
+            "image_format": "png",
+            "quality_percent": 95,
+            "png_compression": 6,
+            "webp_lossless": false,
+            "webp_method": 4,
+            "jpeg_subsampling": "4:4:4",
+            "jpeg_progressive": true,
+            "alpha_background": "white",
+            "write_sidecar": true
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Greymonkey/Influencer_Simple_MOSS_Turbo",
+        "png",
+        95,
+        6,
+        false,
+        4,
+        "4:4:4",
+        true,
+        "white",
+        true
+      ],
+      "title": "06 · Save image + prompt metadata",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 1021,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        410,
+        1010
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "moss\\MOSS_Image_SFT_8_steps_dmd_v0.1.safetensors",
+        1.0
+      ],
+      "title": "8-step DMD acceleration · strength 1.0"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1002,
+      0,
+      1003,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      2,
+      1001,
+      0,
+      1003,
+      1,
+      "GREYMONKEY_CREATOR"
+    ],
+    [
+      3,
+      1003,
+      0,
+      1005,
+      0,
+      "GREYMONKEY_SCENE"
+    ],
+    [
+      4,
+      1004,
+      0,
+      1005,
+      1,
+      "GREYMONKEY_CAPTURE"
+    ],
+    [
+      5,
+      1005,
+      0,
+      1010,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      1007,
+      0,
+      1010,
+      1,
+      "CLIP"
+    ],
+    [
+      7,
+      1005,
+      1,
+      1011,
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      1007,
+      0,
+      1011,
+      1,
+      "CLIP"
+    ],
+    [
+      9,
+      1021,
+      0,
+      1013,
+      0,
+      "MODEL"
+    ],
+    [
+      10,
+      1010,
+      0,
+      1013,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      11,
+      1011,
+      0,
+      1013,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      12,
+      1012,
+      0,
+      1013,
+      3,
+      "LATENT"
+    ],
+    [
+      13,
+      1013,
+      0,
+      1014,
+      0,
+      "LATENT"
+    ],
+    [
+      14,
+      1008,
+      0,
+      1014,
+      1,
+      "VAE"
+    ],
+    [
+      15,
+      1014,
+      0,
+      1015,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      1005,
+      4,
+      1015,
+      1,
+      "GREYMONKEY_RESULT"
+    ],
+    [
+      17,
+      1006,
+      0,
+      1021,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.65,
+      "offset": [
+        200,
+        220
+      ]
+    }
+  },
+  "version": 0.4
+}

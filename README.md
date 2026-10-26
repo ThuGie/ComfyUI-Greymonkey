@@ -18,6 +18,28 @@ Configure people, creatures and objects, add owned details and interactions, or 
 - Named workflow settings that preserve selections, with legacy node adapters and explicit upgrade controls.
 - PNG, JPEG and WebP saving with prompt/workflow metadata and sidecars.
 
+## Included MOSS influencer workflows
+
+Both workflows use **original MOSS Image SFT + the installed 8-step DMD acceleration adapter**, not a style/model mix. They use native ComfyUI MOSS loaders, 768 × 1024 output, 8 Euler/simple steps and CFG 1. The prompt profile remains MOSS Image SFT because the adapter changes sampling rather than the model family.
+
+### Simple: influencer portrait
+
+[Download the simple workflow](workflows/Greymonkey_Influencer_Simple_MOSS_Turbo.json) · [View full-size screenshot](docs/images/influencer-simple-workflow.png)
+
+A compact 15-node setup: creator direction, one adult person, age detail, camera style, prompt generation, original MOSS model + acceleration, sampling and metadata-aware saving.
+
+![Simple MOSS influencer workflow in ComfyUI](docs/images/influencer-simple-workflow.png)
+
+### Advanced: owned details and object interaction
+
+[Download the advanced workflow](workflows/Greymonkey_Influencer_Advanced_MOSS_Turbo.json) · [View full-size screenshot](docs/images/influencer-advanced-workflow.png)
+
+A 34-node setup with independent controls for body build, hairstyle, texture, parting, eye color, facial expression, makeup, gaze, layered clothing, an optional bracelet and body language. A separate controller chain owns its identity, material, finish, casing, grip and button colors. Its left-hand relationship connects to the person through `object_settings`.
+
+![Advanced MOSS influencer workflow in ComfyUI](docs/images/influencer-advanced-workflow.png)
+
+Drag either JSON onto ComfyUI or use **File → Open**. Select matching installed model files in the loaders. See [workflow setup and model files](workflows/README.md). Fixed prompt/image seeds make the examples repeatable; switch their after-generation controls to randomize for variation. These are workflow screenshots; generated portraits are not included.
+
 ## Requirements
 
 - A working ComfyUI installation with Python 3.10 or newer.
@@ -52,7 +74,7 @@ Restart ComfyUI, then reload its browser page. Search the node menu for **Greymo
 4. Confirm `custom_nodes/ComfyUI-Greymonkey/__init__.py` exists directly inside that folder. Avoid nested folders or two copies of the extension.
 5. Restart that ComfyUI instance and reload its page.
 
-For ComfyUI Desktop, use the `custom_nodes` folder belonging to the installation selected in Desktop. Keep your own workflow files separately; this repository contains the extension and its bundled catalogs, without example workflows or development tests.
+For ComfyUI Desktop, use the `custom_nodes` folder belonging to the installation selected in Desktop. Keep your own workflow files separately; this repository contains the extension, bundled catalogs and two ready-to-load workflows. Development tests and personal configuration are excluded.
 
 ## Quick start
 

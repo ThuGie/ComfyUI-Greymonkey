@@ -1,0 +1,2062 @@
+{
+  "last_node_id": 2045,
+  "last_link_id": 35,
+  "nodes": [
+    {
+      "id": 2001,
+      "type": "GreymonkeyInfluencerSettingsV2",
+      "pos": [
+        30,
+        70
+      ],
+      "size": [
+        350,
+        220
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "creator_settings",
+          "type": "GREYMONKEY_CREATOR",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyInfluencerSettingsV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "tech_gaming",
+            "presentation": "phone_candid",
+            "expression_direction": "wink",
+            "body_direction": "relaxed",
+            "wardrobe_direction": "streetwear",
+            "item_policy": "none"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "tech_gaming",
+        "phone_candid",
+        "wink",
+        "relaxed",
+        "streetwear",
+        "none"
+      ],
+      "title": "01 · Creator direction",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2002,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        350
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Age [subject:subject_cat_age]",
+            "option": "Age · 30 Years Old [age_30_years]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Age [subject:subject_cat_age]",
+        "Age · 30 Years Old [age_30_years]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Age · 30 years",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2003,
+      "type": "GreymonkeySceneSubjectV2",
+      "pos": [
+        1260,
+        70
+      ],
+      "size": [
+        350,
+        530
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 1
+        },
+        {
+          "name": "creator_settings",
+          "type": "GREYMONKEY_CREATOR",
+          "link": 2
+        },
+        {
+          "name": "object_settings",
+          "type": "GREYMONKEY_OBJECT",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "scene",
+          "type": "GREYMONKEY_SCENE",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySceneSubjectV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "subject_type": "person",
+            "identity": "Human [species_human]",
+            "gender": "Female / woman",
+            "ethnicity": "Japanese [ethnicity_japanese]",
+            "hair_color": "Black [hair_color_black]",
+            "hair_length": "Random",
+            "magic": "None",
+            "position": "unspecified",
+            "relative_size": "unspecified",
+            "related_object": "None",
+            "relationship": "none",
+            "target_subject": 1,
+            "subject_style": "Influencer"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "person",
+        "Human [species_human]",
+        "Female / woman",
+        "Japanese [ethnicity_japanese]",
+        "Black [hair_color_black]",
+        "Random",
+        "None",
+        "unspecified",
+        "unspecified",
+        "None",
+        "none",
+        1,
+        "Influencer"
+      ],
+      "title": "02 · Person",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2004,
+      "type": "GreymonkeyCameraStyleV2",
+      "pos": [
+        1660,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "capture_settings",
+          "type": "GREYMONKEY_CAPTURE",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyCameraStyleV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "preset": "Clean phone photograph",
+            "capture_method": "Rear-camera candid",
+            "framing": "Random",
+            "noise": "Mild",
+            "focus": "Preset",
+            "device": "Modern iPhone",
+            "lens": "Standard wide",
+            "flash": "Soft window light",
+            "processing": "Natural processing",
+            "white_balance": "Neutral",
+            "compression": "Clean",
+            "camera_angle": "Eye level"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Clean phone photograph",
+        "Rear-camera candid",
+        "Random",
+        "Mild",
+        "Preset",
+        "Modern iPhone",
+        "Standard wide",
+        "Soft window light",
+        "Natural processing",
+        "Neutral",
+        "Clean",
+        "Eye level"
+      ],
+      "title": "03 · Camera style",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2005,
+      "type": "GreymonkeyPromptGeneratorV2",
+      "pos": [
+        2060,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "scene",
+          "type": "GREYMONKEY_SCENE",
+          "link": 4
+        },
+        {
+          "name": "capture_settings",
+          "type": "GREYMONKEY_CAPTURE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "prompt_seed",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "generation_info",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "generation_result",
+          "type": "GREYMONKEY_RESULT",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyPromptGeneratorV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "model_id": "moss-image-sft",
+            "content_mode": "Safe",
+            "generation_theme": "influencer",
+            "art_style": "Random",
+            "detail_level": "standard",
+            "background": "environment",
+            "pose_mode": "random",
+            "aspect_ratio": "3:4",
+            "quality": "recommended",
+            "seed": 260202,
+            "control_after_generate": "fixed"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "moss-image-sft",
+        "Safe",
+        "influencer",
+        "Random",
+        "standard",
+        "environment",
+        "random",
+        "3:4",
+        "recommended",
+        260202,
+        "fixed"
+      ],
+      "title": "04 · Generate prompt",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2006,
+      "type": "UNETLoader",
+      "pos": [
+        1260,
+        1030
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "moss\\moss_image_sft_int8_convrot.safetensors",
+        "default"
+      ],
+      "title": "Original MOSS Image SFT · native loader"
+    },
+    {
+      "id": 2007,
+      "type": "CLIPLoader",
+      "pos": [
+        2060,
+        1030
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            7,
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader"
+      },
+      "widgets_values": [
+        "qwen3.5_9b_moss_image_sft_w4a8_gptq.safetensors",
+        "moss_image",
+        "default"
+      ],
+      "title": "MOSS text encoder · native CLIP"
+    },
+    {
+      "id": 2008,
+      "type": "VAELoader",
+      "pos": [
+        2460,
+        1030
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "moss_image_vae_bf16.safetensors"
+      ],
+      "title": "MOSS VAE"
+    },
+    {
+      "id": 2010,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2460,
+        70
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [],
+      "title": "Positive prompt"
+    },
+    {
+      "id": 2011,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2460,
+        310
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 8
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [],
+      "title": "Negative prompt · inactive at CFG 1"
+    },
+    {
+      "id": 2012,
+      "type": "EmptyFlux2LatentImage",
+      "pos": [
+        2460,
+        700
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyFlux2LatentImage"
+      },
+      "widgets_values": [
+        768,
+        1024,
+        1
+      ],
+      "title": "Portrait canvas · 768 × 1024"
+    },
+    {
+      "id": 2013,
+      "type": "KSampler",
+      "pos": [
+        2860,
+        70
+      ],
+      "size": [
+        350,
+        350
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 11
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 12
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        260202,
+        "fixed",
+        8,
+        1.0,
+        "euler",
+        "simple",
+        1.0
+      ],
+      "title": "05 · MOSS SFT + DMD · 8 steps / CFG 1"
+    },
+    {
+      "id": 2014,
+      "type": "VAEDecode",
+      "pos": [
+        2860,
+        620
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 14
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": [],
+      "title": "Decode image"
+    },
+    {
+      "id": 2015,
+      "type": "GreymonkeySaveImageV2",
+      "pos": [
+        3260,
+        70
+      ],
+      "size": [
+        350,
+        550
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 16
+        },
+        {
+          "name": "generation_result",
+          "type": "GREYMONKEY_RESULT",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "saved_files_info",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySaveImageV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "filename_prefix": "Greymonkey/Influencer_Advanced_MOSS_Turbo",
+            "image_format": "png",
+            "quality_percent": 95,
+            "png_compression": 6,
+            "webp_lossless": false,
+            "webp_method": 4,
+            "jpeg_subsampling": "4:4:4",
+            "jpeg_progressive": true,
+            "alpha_background": "white",
+            "write_sidecar": true
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Greymonkey/Influencer_Advanced_MOSS_Turbo",
+        "png",
+        95,
+        6,
+        false,
+        4,
+        "4:4:4",
+        true,
+        "white",
+        true
+      ],
+      "title": "06 · Save image + prompt metadata",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2021,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        1660,
+        1030
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "moss\\MOSS_Image_SFT_8_steps_dmd_v0.1.safetensors",
+        1.0
+      ],
+      "title": "8-step DMD acceleration · strength 1.0"
+    },
+    {
+      "id": 2016,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        790
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Tops & outerwear [outfits:phone_lifestyle_clothing_upper]",
+            "option": "Tops & outerwear · Zip-front casual hoodie [phone_lifestyle_clothing_1]",
+            "color": "navy",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Tops & outerwear [outfits:phone_lifestyle_clothing_upper]",
+        "Tops & outerwear · Zip-front casual hoodie [phone_lifestyle_clothing_1]",
+        "navy",
+        1.0
+      ],
+      "title": "Outfit · zip-front hoodie in navy",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2017,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        1010
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Upper garment layering [fabric_details:selfie_detail_clothing_upper_layering]",
+            "option": "Upper garment layering · Hoodie over top [selfie_detail_layer_0]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Upper garment layering [fabric_details:selfie_detail_clothing_upper_layering]",
+        "Upper garment layering · Hoodie over top [selfie_detail_layer_0]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Garment layer · hoodie over top",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2018,
+      "type": "GreymonkeyObjectDetailV2",
+      "pos": [
+        830,
+        70
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            32
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyObjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Object material [materials:materials_menu_object_material]",
+            "option": "Object material · Matte ABS plastic [expansion_1000_materials_object_material_matte_abs_plastic]",
+            "color": "black",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Object material [materials:materials_menu_object_material]",
+        "Object material · Matte ABS plastic [expansion_1000_materials_object_material_matte_abs_plastic]",
+        "black",
+        1.0
+      ],
+      "title": "Object material · matte ABS plastic",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2020,
+      "type": "GreymonkeySceneObjectV2",
+      "pos": [
+        830,
+        1270
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "related_object",
+          "type": "GREYMONKEY_OBJECT",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "scene",
+          "type": "GREYMONKEY_SCENE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySceneObjectV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "identity": "Game controller [object_detail_catalog_identity_31]",
+            "color": "black",
+            "relationship": "holding_left_hand"
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Game controller [object_detail_catalog_identity_31]",
+        "black",
+        "holding_left_hand"
+      ],
+      "title": "Owned object · black controller",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2031,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        570
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Body build [subject:subject_menu_body_build]",
+            "option": "Body build · Slender build [subject_controls_build_1]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Body build [subject:subject_menu_body_build]",
+        "Body build · Slender build [subject_controls_build_1]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Body build · Slender build",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2032,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        790
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Hair texture [subject:subject_menu_hair_texture]",
+            "option": "Hair texture · Straight Hair [hair_texture_straight]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Hair texture [subject:subject_menu_hair_texture]",
+        "Hair texture · Straight Hair [hair_texture_straight]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Hair texture · Straight Hair",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2033,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        1010
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Hairstyle [subject:subject_menu_hair_style]",
+            "option": "Hairstyle · Ponytail [hair_style_ponytail]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Hairstyle [subject:subject_menu_hair_style]",
+        "Hairstyle · Ponytail [hair_style_ponytail]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Hairstyle · Ponytail",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2034,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        1230
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Hair parting [subject:subject_menu_hair_part]",
+            "option": "Hair parting · Center Part [hair_parted_center]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Hair parting [subject:subject_menu_hair_part]",
+        "Hair parting · Center Part [hair_parted_center]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Hair parting · Center Part",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2035,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        30,
+        1450
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            27
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Eye color [subject:subject_menu_eye_color]",
+            "option": "Eye color · Dark Brown [eye_color_dark_brown]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Eye color [subject:subject_menu_eye_color]",
+        "Eye color · Dark Brown [eye_color_dark_brown]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Eye color · Dark Brown",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2045,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        70
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Creator facial gestures [emotion:emotion_menu_creator_creator_facial_gestures]",
+            "option": "Creator facial gestures · A playful left-eye wink with a slight smile [creator_expression_wink_01]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Creator facial gestures [emotion:emotion_menu_creator_creator_facial_gestures]",
+        "Creator facial gestures · A playful left-eye wink with a slight smile [creator_expression_wink_01]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Expression · left-eye wink",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2036,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        350
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Makeup style [subject:subject_menu_makeup_style]",
+            "option": "Makeup style · Natural Minimal Makeup [makeup_natural_minimal]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Makeup style [subject:subject_menu_makeup_style]",
+        "Makeup style · Natural Minimal Makeup [makeup_natural_minimal]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Makeup style · Natural Minimal Makeup",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2037,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        570
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Gaze direction [subject:subject_menu_gaze_direction]",
+            "option": "Gaze direction · Looking at Camera [gaze_at_camera]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Gaze direction [subject:subject_menu_gaze_direction]",
+        "Gaze direction · Looking at Camera [gaze_at_camera]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Gaze direction · Looking at Camera",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2038,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        1230
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 30
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Bottoms [outfits:outfits_menu_bottoms]",
+            "option": "Bottoms · Straight-leg jeans [expansion_1000_outfits_bottoms_straight_leg_jeans]",
+            "color": "black",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Bottoms [outfits:outfits_menu_bottoms]",
+        "Bottoms · Straight-leg jeans [expansion_1000_outfits_bottoms_straight_leg_jeans]",
+        "black",
+        1.0
+      ],
+      "title": "Bottoms · Straight-leg jeans",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2040,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        1670
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Body language [body_micro_detail:body_micro_detail_menu_language]",
+            "option": "Body language · Relaxed Body Language [body_language_relaxed]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Body language [body_micro_detail:body_micro_detail_menu_language]",
+        "Body language · Relaxed Body Language [body_language_relaxed]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Body language · Relaxed Body Language",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2039,
+      "type": "GreymonkeySubjectDetailV2",
+      "pos": [
+        430,
+        1450
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "subject_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeySubjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Bracelets & arm jewelry [outfits:outfits_menu_bracelets]",
+            "option": "Bracelets & arm jewelry · Bracelet [accessory_bracelet]",
+            "color": "silver",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Bracelets & arm jewelry [outfits:outfits_menu_bracelets]",
+        "Bracelets & arm jewelry · Bracelet [accessory_bracelet]",
+        "silver",
+        1.0
+      ],
+      "title": "Optional bracelet · connect with wrists in frame",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2041,
+      "type": "GreymonkeyObjectDetailV2",
+      "pos": [
+        830,
+        310
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            33
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyObjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Surface finish [materials:materials_menu_surface_finish]",
+            "option": "Surface finish · Micro-etched matte finish [expansion_1000_materials_surface_finish_micro_etched_matte_finish]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Surface finish [materials:materials_menu_surface_finish]",
+        "Surface finish · Micro-etched matte finish [expansion_1000_materials_surface_finish_micro_etched_matte_finish]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Surface finish · Micro-etched matte finish",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2042,
+      "type": "GreymonkeyObjectDetailV2",
+      "pos": [
+        830,
+        550
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyObjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Product controls [object_detail:object_detail_menu_controls]",
+            "option": "Product controls · Backlit control buttons [advanced_object_detail_menu_controls_backlit_control_buttons]",
+            "color": "red",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Product controls [object_detail:object_detail_menu_controls]",
+        "Product controls · Backlit control buttons [advanced_object_detail_menu_controls_backlit_control_buttons]",
+        "red",
+        1.0
+      ],
+      "title": "Product controls · Backlit control buttons",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2043,
+      "type": "GreymonkeyObjectDetailV2",
+      "pos": [
+        830,
+        790
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            35
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyObjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Product casing [object_detail:object_detail_menu_casing]",
+            "option": "Product casing · Soft-touch outer casing [advanced_object_detail_menu_casing_soft_touch_outer_casing]",
+            "color": "black",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Product casing [object_detail:object_detail_menu_casing]",
+        "Product casing · Soft-touch outer casing [advanced_object_detail_menu_casing_soft_touch_outer_casing]",
+        "black",
+        1.0
+      ],
+      "title": "Product casing · Soft-touch outer casing",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    },
+    {
+      "id": 2044,
+      "type": "GreymonkeyObjectDetailV2",
+      "pos": [
+        830,
+        1030
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "previous_details",
+          "type": "GREYMONKEY_DETAILS",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "object_details",
+          "type": "GREYMONKEY_DETAILS",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GreymonkeyObjectDetailV2",
+        "greymonkey_state": {
+          "version": 1,
+          "values": {
+            "category": "Product grip [object_detail:object_detail_menu_grip]",
+            "option": "Product grip · A recessed finger grip [advanced_object_detail_menu_grip_a_recessed_finger_grip]",
+            "color": "Unspecified",
+            "weight": 1.0
+          },
+          "per_type": {}
+        }
+      },
+      "widgets_values": [
+        "Product grip [object_detail:object_detail_menu_grip]",
+        "Product grip · A recessed finger grip [advanced_object_detail_menu_grip_a_recessed_finger_grip]",
+        "Unspecified",
+        1.0
+      ],
+      "title": "Product grip · A recessed finger grip",
+      "color": "#263b3b",
+      "bgcolor": "#152929"
+    }
+  ],
+  "links": [
+    [
+      1,
+      2040,
+      0,
+      2003,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      2,
+      2001,
+      0,
+      2003,
+      1,
+      "GREYMONKEY_CREATOR"
+    ],
+    [
+      3,
+      2020,
+      0,
+      2003,
+      2,
+      "GREYMONKEY_OBJECT"
+    ],
+    [
+      4,
+      2003,
+      0,
+      2005,
+      0,
+      "GREYMONKEY_SCENE"
+    ],
+    [
+      5,
+      2004,
+      0,
+      2005,
+      1,
+      "GREYMONKEY_CAPTURE"
+    ],
+    [
+      6,
+      2005,
+      0,
+      2010,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      2007,
+      0,
+      2010,
+      1,
+      "CLIP"
+    ],
+    [
+      8,
+      2005,
+      1,
+      2011,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      2007,
+      0,
+      2011,
+      1,
+      "CLIP"
+    ],
+    [
+      10,
+      2021,
+      0,
+      2013,
+      0,
+      "MODEL"
+    ],
+    [
+      11,
+      2010,
+      0,
+      2013,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      12,
+      2011,
+      0,
+      2013,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      13,
+      2012,
+      0,
+      2013,
+      3,
+      "LATENT"
+    ],
+    [
+      14,
+      2013,
+      0,
+      2014,
+      0,
+      "LATENT"
+    ],
+    [
+      15,
+      2008,
+      0,
+      2014,
+      1,
+      "VAE"
+    ],
+    [
+      16,
+      2014,
+      0,
+      2015,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      2005,
+      4,
+      2015,
+      1,
+      "GREYMONKEY_RESULT"
+    ],
+    [
+      18,
+      2006,
+      0,
+      2021,
+      0,
+      "MODEL"
+    ],
+    [
+      19,
+      2037,
+      0,
+      2016,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      20,
+      2016,
+      0,
+      2017,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      21,
+      2044,
+      0,
+      2020,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      22,
+      2002,
+      0,
+      2031,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      23,
+      2031,
+      0,
+      2032,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      24,
+      2032,
+      0,
+      2033,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      25,
+      2033,
+      0,
+      2034,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      26,
+      2034,
+      0,
+      2035,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      27,
+      2035,
+      0,
+      2045,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      28,
+      2045,
+      0,
+      2036,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      29,
+      2036,
+      0,
+      2037,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      30,
+      2017,
+      0,
+      2038,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      31,
+      2038,
+      0,
+      2040,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      32,
+      2018,
+      0,
+      2041,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      33,
+      2041,
+      0,
+      2042,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      34,
+      2042,
+      0,
+      2043,
+      0,
+      "GREYMONKEY_DETAILS"
+    ],
+    [
+      35,
+      2043,
+      0,
+      2044,
+      0,
+      "GREYMONKEY_DETAILS"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.52,
+      "offset": [
+        120,
+        160
+      ]
+    }
+  },
+  "version": 0.4
+}
