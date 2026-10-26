@@ -7,3 +7,8 @@ dependencies = ["numpy>=1.24", "Pillow>=10"]
 
 [tool.comfy]
 DisplayName = "Greymonkey Prompt Generator"
+
+[project.urls]
+Homepage = "https://greymonkeys.nl"
+Repository = "https://github.com/ThuGie/ComfyUI-Greymonkey"
+Issues = "https://github.com/ThuGie/ComfyUI-Greymonkey/issues"
