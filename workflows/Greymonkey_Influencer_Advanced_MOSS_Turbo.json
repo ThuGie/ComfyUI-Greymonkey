@@ -1508,51 +1508,6 @@
       "bgcolor": "#152929"
     },
     {
-      "id": 2039,
-      "type": "GreymonkeySubjectDetailV2",
-      "pos": [
-        430,
-        1450
-      ],
-      "size": [
-        350,
-        200
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "subject_details",
-          "type": "GREYMONKEY_DETAILS",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "GreymonkeySubjectDetailV2",
-        "greymonkey_state": {
-          "version": 1,
-          "values": {
-            "category": "Bracelets & arm jewelry [outfits:outfits_menu_bracelets]",
-            "option": "Bracelets & arm jewelry · Bracelet [accessory_bracelet]",
-            "color": "silver",
-            "weight": 1.0
-          },
-          "per_type": {}
-        }
-      },
-      "widgets_values": [
-        "Bracelets & arm jewelry [outfits:outfits_menu_bracelets]",
-        "Bracelets & arm jewelry · Bracelet [accessory_bracelet]",
-        "silver",
-        1.0
-      ],
-      "title": "Optional bracelet · connect with wrists in frame",
-      "color": "#263b3b",
-      "bgcolor": "#152929"
-    },
-    {
       "id": 2041,
       "type": "GreymonkeyObjectDetailV2",
       "pos": [

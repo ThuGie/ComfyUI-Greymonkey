@@ -34,7 +34,7 @@ A compact 15-node setup: creator direction, one adult person, age detail, camera
 
 [Download the advanced workflow](workflows/Greymonkey_Influencer_Advanced_MOSS_Turbo.json) · [View full-size screenshot](docs/images/influencer-advanced-workflow.png)
 
-A 34-node setup with independent controls for body build, hairstyle, texture, parting, eye color, facial expression, makeup, gaze, layered clothing, an optional bracelet and body language. A separate controller chain owns its identity, material, finish, casing, grip and button colors. Its left-hand relationship connects to the person through `object_settings`.
+A 33-node setup with independent controls for body build, hairstyle, texture, parting, eye color, facial expression, makeup, gaze, layered clothing and body language. A separate controller chain owns its identity, material, finish, casing, grip and button colors. Its left-hand relationship connects to the person through `object_settings`.
 
 ![Advanced MOSS influencer workflow in ComfyUI](docs/images/influencer-advanced-workflow.png)
 

@@ -25,8 +25,8 @@ Choose your matching filenames when your installation uses different names or qu
 
 ## Advanced detail chains
 
-The subject chain contains age, build, hair texture/style/parting, eyes, wink expression, makeup, gaze, hoodie, layering, jeans, an optional bracelet and body language. Change each detail's own color where available. Hair color is on Scene Subject. Creator Settings controls category/presentation; explicit details take priority over random filling.
+The subject chain contains age, build, hair texture/style/parting, eyes, wink expression, makeup, gaze, hoodie, layering, jeans and body language. Change each detail's own color where available. Hair color is on Scene Subject. Creator Settings controls category/presentation; explicit details take priority over random filling.
 
 The object chain contains material, surface finish, colored controls, casing and grip → Scene Object → Scene Subject.object_settings. Scene Subject's legacy Related Object and Relationship remain None, preventing duplicate specification. To add a second independently configured object, add it as another scene subject and target it with the existing relationship system.
 
-Prompt generation calls the configured Greymonkey service. Latent dimensions and sampling are controlled by the actual image nodes, not by the generator's suggested settings. Save a copy before experimenting. Both final workflows completed successfully in real ComfyUI using original SFT + DMD at 768 × 1024. The optional bracelet is disconnected by default; connect it only with compatible wrist visibility. Generated portraits are held back from the public repository.
+Prompt generation calls the configured Greymonkey service. Latent dimensions and sampling are controlled by the actual image nodes, not by the generator's suggested settings. Save a copy before experimenting. Both final workflows completed successfully in real ComfyUI using original SFT + DMD at 768 × 1024. The bracelet has been removed from this example to avoid wrist-visibility conflicts with random framing. Generated portraits are held back from the public repository.
