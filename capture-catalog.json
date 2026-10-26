@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "presets": {
+    "Older iPhone snapshot": [
+      "phone_lifestyle_quality_9",
+      "phone_lifestyle_quality_1",
+      "phone_lifestyle_quality_4",
+      "phone_lifestyle_quality_5",
+      "phone_lifestyle_quality_10"
+    ],
+    "Budget phone amateur": [
+      "phone_lifestyle_quality_8",
+      "phone_lifestyle_quality_0",
+      "phone_lifestyle_quality_3",
+      "phone_lifestyle_quality_5",
+      "phone_lifestyle_quality_7",
+      "phone_lifestyle_quality_10"
+    ],
+    "Compressed social upload": [
+      "phone_lifestyle_quality_9",
+      "phone_lifestyle_quality_1",
+      "phone_lifestyle_quality_3",
+      "phone_lifestyle_quality_5"
+    ],
+    "Clean phone photograph": [
+      "phone_lifestyle_quality_2",
+      "phone_lifestyle_quality_10"
+    ],
+    "Polished creator photograph": [
+      "phone_lifestyle_quality_2"
+    ],
+    "Unspecified": [],
+    "Creator phone candid": [
+      "capture_control_device_older_iphone",
+      "phone_lifestyle_quality_1",
+      "phone_lifestyle_quality_4",
+      "phone_lifestyle_quality_5",
+      "phone_lifestyle_quality_10"
+    ],
+    "Creator polished lifestyle": [
+      "capture_control_noise_clean"
+    ]
+  },
+  "dimensions": {
+    "capture_method": {
+      "Unspecified": null,
+      "Front-camera selfie": "phone_lifestyle_capture_front",
+      "Rear-camera mirror selfie": "phone_lifestyle_capture_mirror",
+      "Rear-camera candid": "phone_lifestyle_capture_rear",
+      "Phone timer": "phone_lifestyle_capture_timer"
+    },
+    "framing": {
+      "Random": null,
+      "Full body": "shot_full_body",
+      "Three-quarter body": "shot_three_quarter_body",
+      "Medium shot": "shot_medium_shot",
+      "Close-up portrait": "shot_closeup_portrait"
+    },
+    "noise": {
+      "Preset": null,
+      "Clean": "capture_control_noise_clean",
+      "Mild": "capture_control_noise_mild",
+      "Heavy": "capture_control_noise_heavy"
+    },
+    "focus": {
+      "Preset": null,
+      "Imperfect focus": "capture_control_focus_imperfect",
+      "Eyes and phone in focus": "phone_lifestyle_quality_6"
+    },
+    "device": {
+      "Unspecified": null,
+      "iPhone 11 Pro Max": "capture_control_device_iphone11",
+      "Older iPhone": "capture_control_device_older_iphone",
+      "Modern iPhone": "capture_control_device_modern_iphone",
+      "Budget Android": "capture_control_device_budget_android",
+      "Compact digital camera": "capture_control_device_compact",
+      "Disposable film camera": "capture_control_device_disposable"
+    },
+    "lens": {
+      "Unspecified": null,
+      "Ultrawide": "capture_control_lens_ultrawide",
+      "Standard wide": "capture_control_lens_wide",
+      "Portrait telephoto": "capture_control_lens_telephoto",
+      "Front selfie lens": "capture_control_lens_front"
+    },
+    "flash": {
+      "Unspecified": null,
+      "Direct phone flash": "capture_control_flash_flash",
+      "Soft window light": "capture_control_flash_window",
+      "Dim ceiling light": "capture_control_flash_ceiling",
+      "Screen glow": "capture_control_flash_screen",
+      "Mixed LED room light": "capture_control_flash_led",
+      "Available night light": "capture_control_flash_night"
+    },
+    "processing": {
+      "Unspecified": null,
+      "Natural processing": "capture_control_processing_natural",
+      "Phone HDR": "capture_control_processing_hdr",
+      "Soft low contrast": "capture_control_processing_soft",
+      "Harsh digital sharpening": "capture_control_processing_sharp",
+      "Film color": "capture_control_processing_film"
+    },
+    "white_balance": {
+      "Unspecified": null,
+      "Neutral": "capture_control_white_balance_neutral",
+      "Warm indoor": "capture_control_white_balance_warm",
+      "Cool indoor": "capture_control_white_balance_cool",
+      "Mixed color cast": "capture_control_white_balance_mixed"
+    },
+    "compression": {
+      "Preset": null,
+      "Clean": "capture_control_compression_clean",
+      "Light social compression": "capture_control_compression_light",
+      "Heavy social compression": "capture_control_compression_heavy"
+    },
+    "camera_angle": {
+      "Unspecified": null,
+      "Eye level": "capture_control_camera_angle_eye",
+      "Low angle": "capture_control_camera_angle_low",
+      "High angle": "capture_control_camera_angle_high",
+      "Tilted / Dutch angle": "capture_control_camera_angle_tilted"
+    }
+  },
+  "replace_slots": {
+    "noise": [
+      "capture_noise"
+    ],
+    "focus": [
+      "capture_focus"
+    ],
+    "compression": [
+      "capture_compression"
+    ],
+    "device": [
+      "capture_device",
+      "capture_character"
+    ],
+    "lens": [
+      "capture_lens",
+      "capture_perspective"
+    ],
+    "camera_angle": [
+      "capture_angle",
+      "capture_tilt"
+    ],
+    "flash": [
+      "lighting"
+    ],
+    "processing": [
+      "capture_processing"
+    ],
+    "white_balance": [
+      "capture_white_balance"
+    ],
+    "framing": [
+      "framing"
+    ],
+    "capture_method": [
+      "capture_method"
+    ]
+  }
+}

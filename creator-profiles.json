@@ -1,0 +1,5100 @@
+{
+  "schema_version": 1,
+  "version": "1.2.0",
+  "choices": {
+    "category": [
+      "automatic",
+      "lifestyle",
+      "fashion",
+      "beauty",
+      "fitness",
+      "travel",
+      "automotive",
+      "food_cafe",
+      "home",
+      "tech_gaming",
+      "outdoor",
+      "couple"
+    ],
+    "presentation": [
+      "balanced",
+      "phone_candid",
+      "polished_lifestyle",
+      "brand_editorial"
+    ],
+    "expression_direction": [
+      "automatic",
+      "natural",
+      "playful",
+      "confident",
+      "thoughtful",
+      "serious",
+      "kiss_face",
+      "soft_smile",
+      "big_smile",
+      "laughing",
+      "wink",
+      "blink",
+      "tongue_out",
+      "pout",
+      "surprised",
+      "cheeky",
+      "focused"
+    ],
+    "body_direction": [
+      "automatic",
+      "relaxed",
+      "candid_action",
+      "fashion",
+      "playful",
+      "athletic",
+      "romantic"
+    ],
+    "wardrobe_direction": [
+      "automatic",
+      "casual",
+      "streetwear",
+      "smart_casual",
+      "activewear",
+      "dressy",
+      "editorial"
+    ],
+    "item_policy": [
+      "inherit",
+      "none",
+      "automatic"
+    ]
+  },
+  "defaults": {
+    "category": "automatic",
+    "presentation": "balanced",
+    "expression_direction": "automatic",
+    "body_direction": "automatic",
+    "wardrobe_direction": "automatic",
+    "item_policy": "inherit"
+  },
+  "presentation_weights": {
+    "phone_candid": 40,
+    "polished_lifestyle": 40,
+    "brand_editorial": 20
+  },
+  "theme_categories": {
+    "home": [
+      "lifestyle",
+      "beauty",
+      "fitness",
+      "automotive",
+      "food_cafe",
+      "home",
+      "tech_gaming",
+      "couple"
+    ],
+    "urban": [
+      "lifestyle",
+      "fashion",
+      "beauty",
+      "fitness",
+      "travel",
+      "automotive",
+      "food_cafe",
+      "tech_gaming",
+      "couple"
+    ],
+    "nature": [
+      "fitness",
+      "travel",
+      "outdoor",
+      "couple"
+    ],
+    "coastal": [
+      "lifestyle",
+      "travel",
+      "outdoor",
+      "couple"
+    ],
+    "work": [
+      "lifestyle",
+      "fashion",
+      "beauty",
+      "food_cafe",
+      "tech_gaming"
+    ],
+    "sport": [
+      "fitness",
+      "outdoor",
+      "automotive"
+    ]
+  },
+  "expressions": {
+    "natural": [
+      "influencer_face_011",
+      "influencer_face_012",
+      "influencer_face_013",
+      "influencer_face_014",
+      "influencer_face_015",
+      "influencer_face_016",
+      "influencer_face_017",
+      "influencer_face_018",
+      "influencer_face_019",
+      "influencer_face_020",
+      "influencer_face_061",
+      "influencer_face_062",
+      "influencer_face_063",
+      "influencer_face_064",
+      "influencer_face_065",
+      "influencer_face_066",
+      "influencer_face_067",
+      "influencer_face_068",
+      "influencer_face_069",
+      "influencer_face_070",
+      "influencer_face_071",
+      "influencer_face_072",
+      "influencer_face_073",
+      "influencer_face_074",
+      "influencer_face_075",
+      "influencer_face_076",
+      "influencer_face_077",
+      "influencer_face_078",
+      "influencer_face_079",
+      "influencer_face_080",
+      "influencer_face_091",
+      "influencer_face_092",
+      "influencer_face_093",
+      "influencer_face_094",
+      "influencer_face_095",
+      "influencer_face_096",
+      "influencer_face_097",
+      "influencer_face_098",
+      "influencer_face_099",
+      "influencer_face_100"
+    ],
+    "playful": [
+      "influencer_face_021",
+      "influencer_face_022",
+      "influencer_face_023",
+      "influencer_face_024",
+      "influencer_face_025",
+      "influencer_face_026",
+      "influencer_face_027",
+      "influencer_face_028",
+      "influencer_face_029",
+      "influencer_face_030",
+      "influencer_face_041",
+      "influencer_face_042",
+      "influencer_face_043",
+      "influencer_face_044",
+      "influencer_face_045",
+      "influencer_face_046",
+      "influencer_face_047",
+      "influencer_face_048",
+      "influencer_face_049",
+      "influencer_face_050",
+      "influencer_face_051",
+      "influencer_face_052",
+      "influencer_face_053",
+      "influencer_face_054",
+      "influencer_face_055",
+      "influencer_face_056",
+      "influencer_face_057",
+      "influencer_face_058",
+      "influencer_face_059",
+      "influencer_face_060"
+    ],
+    "confident": [
+      "influencer_face_031",
+      "influencer_face_032",
+      "influencer_face_033",
+      "influencer_face_034",
+      "influencer_face_035",
+      "influencer_face_036",
+      "influencer_face_037",
+      "influencer_face_038",
+      "influencer_face_039",
+      "influencer_face_040"
+    ],
+    "thoughtful": [
+      "influencer_face_061",
+      "influencer_face_062",
+      "influencer_face_063",
+      "influencer_face_064",
+      "influencer_face_065",
+      "influencer_face_066",
+      "influencer_face_067",
+      "influencer_face_068",
+      "influencer_face_069",
+      "influencer_face_070"
+    ],
+    "serious": [
+      "influencer_face_081",
+      "influencer_face_082",
+      "influencer_face_083",
+      "influencer_face_084",
+      "influencer_face_085",
+      "influencer_face_086",
+      "influencer_face_087",
+      "influencer_face_088",
+      "influencer_face_089",
+      "influencer_face_090"
+    ],
+    "kiss_face": [
+      "influencer_face_001",
+      "influencer_face_002",
+      "influencer_face_003",
+      "influencer_face_004",
+      "influencer_face_005",
+      "influencer_face_006",
+      "influencer_face_007",
+      "influencer_face_008",
+      "influencer_face_009",
+      "influencer_face_010"
+    ],
+    "soft_smile": [
+      "creator_expression_soft_smile_01",
+      "creator_expression_soft_smile_02",
+      "creator_expression_soft_smile_03",
+      "creator_expression_soft_smile_04",
+      "creator_expression_soft_smile_05",
+      "creator_expression_soft_smile_06"
+    ],
+    "big_smile": [
+      "creator_expression_big_smile_01",
+      "creator_expression_big_smile_02",
+      "creator_expression_big_smile_03",
+      "creator_expression_big_smile_04",
+      "creator_expression_big_smile_05",
+      "creator_expression_big_smile_06"
+    ],
+    "laughing": [
+      "creator_expression_laughing_01",
+      "creator_expression_laughing_02",
+      "creator_expression_laughing_03",
+      "creator_expression_laughing_04",
+      "creator_expression_laughing_05",
+      "creator_expression_laughing_06"
+    ],
+    "wink": [
+      "creator_expression_wink_01",
+      "creator_expression_wink_02",
+      "creator_expression_wink_03",
+      "creator_expression_wink_04",
+      "creator_expression_wink_05",
+      "creator_expression_wink_06"
+    ],
+    "blink": [
+      "creator_expression_blink_01",
+      "creator_expression_blink_02",
+      "creator_expression_blink_03",
+      "creator_expression_blink_04",
+      "creator_expression_blink_05",
+      "creator_expression_blink_06"
+    ],
+    "tongue_out": [
+      "creator_expression_tongue_out_01",
+      "creator_expression_tongue_out_02",
+      "creator_expression_tongue_out_03",
+      "creator_expression_tongue_out_04",
+      "creator_expression_tongue_out_05",
+      "creator_expression_tongue_out_06"
+    ],
+    "pout": [
+      "creator_expression_pout_01",
+      "creator_expression_pout_02",
+      "creator_expression_pout_03",
+      "creator_expression_pout_04",
+      "creator_expression_pout_05",
+      "creator_expression_pout_06"
+    ],
+    "surprised": [
+      "creator_expression_surprised_01",
+      "creator_expression_surprised_02",
+      "creator_expression_surprised_03",
+      "creator_expression_surprised_04",
+      "creator_expression_surprised_05",
+      "creator_expression_surprised_06"
+    ],
+    "cheeky": [
+      "creator_expression_cheeky_01",
+      "creator_expression_cheeky_02",
+      "creator_expression_cheeky_03",
+      "creator_expression_cheeky_04",
+      "creator_expression_cheeky_05",
+      "creator_expression_cheeky_06"
+    ],
+    "focused": [
+      "creator_expression_focused_01",
+      "creator_expression_focused_02",
+      "creator_expression_focused_03",
+      "creator_expression_focused_04",
+      "creator_expression_focused_05",
+      "creator_expression_focused_06"
+    ]
+  },
+  "categories": {
+    "lifestyle": {
+      "name": "Lifestyle",
+      "scenarios": [
+        {
+          "id": "creator_lifestyle_01",
+          "name": "morning pause",
+          "location_id": "creator_lifestyle_01_location",
+          "pose_id": "creator_lifestyle_01_pose",
+          "pose_ids": [
+            "creator_lifestyle_01_pose",
+            "creator_lifestyle_01_pose_variant_1",
+            "creator_lifestyle_01_pose_variant_2",
+            "creator_lifestyle_01_pose_variant_3",
+            "creator_lifestyle_01_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_02",
+          "name": "balcony break",
+          "location_id": "creator_lifestyle_02_location",
+          "pose_id": "creator_lifestyle_02_pose",
+          "pose_ids": [
+            "creator_lifestyle_02_pose",
+            "creator_lifestyle_02_pose_variant_1",
+            "creator_lifestyle_02_pose_variant_2",
+            "creator_lifestyle_02_pose_variant_3",
+            "creator_lifestyle_02_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_03",
+          "name": "neighborhood walk",
+          "location_id": "creator_lifestyle_03_location",
+          "pose_id": "creator_lifestyle_03_pose",
+          "pose_ids": [
+            "creator_lifestyle_03_pose",
+            "creator_lifestyle_03_pose_variant_1",
+            "creator_lifestyle_03_pose_variant_2",
+            "creator_lifestyle_03_pose_variant_3",
+            "creator_lifestyle_03_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_04",
+          "name": "weekend pause",
+          "location_id": "creator_lifestyle_04_location",
+          "pose_id": "creator_lifestyle_04_pose",
+          "pose_ids": [
+            "creator_lifestyle_04_pose",
+            "creator_lifestyle_04_pose_variant_1",
+            "creator_lifestyle_04_pose_variant_2",
+            "creator_lifestyle_04_pose_variant_3",
+            "creator_lifestyle_04_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_05",
+          "name": "reading break",
+          "location_id": "creator_lifestyle_05_location",
+          "pose_id": "creator_lifestyle_05_pose",
+          "pose_ids": [
+            "creator_lifestyle_05_pose",
+            "creator_lifestyle_05_pose_variant_1",
+            "creator_lifestyle_05_pose_variant_2",
+            "creator_lifestyle_05_pose_variant_3",
+            "creator_lifestyle_05_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_06",
+          "name": "outfit check",
+          "location_id": "creator_lifestyle_06_location",
+          "pose_id": "creator_lifestyle_06_pose",
+          "pose_ids": [
+            "creator_lifestyle_06_pose",
+            "creator_lifestyle_06_pose_variant_1",
+            "creator_lifestyle_06_pose_variant_2",
+            "creator_lifestyle_06_pose_variant_3",
+            "creator_lifestyle_06_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_07",
+          "name": "errand stop",
+          "location_id": "creator_lifestyle_07_location",
+          "pose_id": "creator_lifestyle_07_pose",
+          "pose_ids": [
+            "creator_lifestyle_07_pose",
+            "creator_lifestyle_07_pose_variant_1",
+            "creator_lifestyle_07_pose_variant_2",
+            "creator_lifestyle_07_pose_variant_3",
+            "creator_lifestyle_07_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_08",
+          "name": "market stroll",
+          "location_id": "creator_lifestyle_08_location",
+          "pose_id": "creator_lifestyle_08_pose",
+          "pose_ids": [
+            "creator_lifestyle_08_pose",
+            "creator_lifestyle_08_pose_variant_1",
+            "creator_lifestyle_08_pose_variant_2",
+            "creator_lifestyle_08_pose_variant_3",
+            "creator_lifestyle_08_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_09",
+          "name": "sunset pause",
+          "location_id": "creator_lifestyle_09_location",
+          "pose_id": "creator_lifestyle_09_pose",
+          "pose_ids": [
+            "creator_lifestyle_09_pose",
+            "creator_lifestyle_09_pose_variant_1",
+            "creator_lifestyle_09_pose_variant_2",
+            "creator_lifestyle_09_pose_variant_3",
+            "creator_lifestyle_09_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_10",
+          "name": "stairway moment",
+          "location_id": "creator_lifestyle_10_location",
+          "pose_id": "creator_lifestyle_10_pose",
+          "pose_ids": [
+            "creator_lifestyle_10_pose",
+            "creator_lifestyle_10_pose_variant_1",
+            "creator_lifestyle_10_pose_variant_2",
+            "creator_lifestyle_10_pose_variant_3",
+            "creator_lifestyle_10_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_11",
+          "name": "courtyard break",
+          "location_id": "creator_lifestyle_11_location",
+          "pose_id": "creator_lifestyle_11_pose",
+          "pose_ids": [
+            "creator_lifestyle_11_pose",
+            "creator_lifestyle_11_pose_variant_1",
+            "creator_lifestyle_11_pose_variant_2",
+            "creator_lifestyle_11_pose_variant_3",
+            "creator_lifestyle_11_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_lifestyle_12",
+          "name": "rooftop afternoon",
+          "location_id": "creator_lifestyle_12_location",
+          "pose_id": "creator_lifestyle_12_pose",
+          "pose_ids": [
+            "creator_lifestyle_12_pose",
+            "creator_lifestyle_12_pose_variant_1",
+            "creator_lifestyle_12_pose_variant_2",
+            "creator_lifestyle_12_pose_variant_3",
+            "creator_lifestyle_12_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "advanced_object_identity_bag_tote_bag",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_lifestyle_01_pose",
+        "creator_lifestyle_02_pose",
+        "creator_lifestyle_03_pose",
+        "creator_lifestyle_04_pose",
+        "creator_lifestyle_05_pose",
+        "creator_lifestyle_06_pose",
+        "creator_lifestyle_07_pose",
+        "creator_lifestyle_08_pose",
+        "creator_lifestyle_09_pose",
+        "creator_lifestyle_10_pose",
+        "creator_lifestyle_11_pose",
+        "creator_lifestyle_12_pose"
+      ],
+      "item_ids": [
+        "everyday_object_paperback_book_4",
+        "advanced_object_identity_bag_tote_bag",
+        "interaction_object_coffee"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_smart_casual"
+      ],
+      "accessory_ids": [
+        "accessory_sunglasses",
+        "accessory_earrings_stud"
+      ]
+    },
+    "fashion": {
+      "name": "Fashion",
+      "scenarios": [
+        {
+          "id": "creator_fashion_01",
+          "name": "streetwear walk",
+          "location_id": "creator_fashion_01_location",
+          "pose_id": "creator_fashion_01_pose",
+          "pose_ids": [
+            "creator_fashion_01_pose",
+            "creator_fashion_01_pose_variant_1",
+            "creator_fashion_01_pose_variant_2",
+            "creator_fashion_01_pose_variant_3",
+            "creator_fashion_01_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_02",
+          "name": "tailoring detail",
+          "location_id": "creator_fashion_02_location",
+          "pose_id": "creator_fashion_02_pose",
+          "pose_ids": [
+            "creator_fashion_02_pose",
+            "creator_fashion_02_pose_variant_1",
+            "creator_fashion_02_pose_variant_2",
+            "creator_fashion_02_pose_variant_3",
+            "creator_fashion_02_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_03",
+          "name": "shoe styling",
+          "location_id": "creator_fashion_03_location",
+          "pose_id": "creator_fashion_03_pose",
+          "pose_ids": [
+            "creator_fashion_03_pose",
+            "creator_fashion_03_pose_variant_1",
+            "creator_fashion_03_pose_variant_2",
+            "creator_fashion_03_pose_variant_3",
+            "creator_fashion_03_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_04",
+          "name": "layered outfit",
+          "location_id": "creator_fashion_04_location",
+          "pose_id": "creator_fashion_04_pose",
+          "pose_ids": [
+            "creator_fashion_04_pose",
+            "creator_fashion_04_pose_variant_1",
+            "creator_fashion_04_pose_variant_2",
+            "creator_fashion_04_pose_variant_3",
+            "creator_fashion_04_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_05",
+          "name": "coat movement",
+          "location_id": "creator_fashion_05_location",
+          "pose_id": "creator_fashion_05_pose",
+          "pose_ids": [
+            "creator_fashion_05_pose",
+            "creator_fashion_05_pose_variant_1",
+            "creator_fashion_05_pose_variant_2",
+            "creator_fashion_05_pose_variant_3",
+            "creator_fashion_05_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_06",
+          "name": "bag styling",
+          "location_id": "creator_fashion_06_location",
+          "pose_id": "creator_fashion_06_pose",
+          "pose_ids": [
+            "creator_fashion_06_pose",
+            "creator_fashion_06_pose_variant_1",
+            "creator_fashion_06_pose_variant_2",
+            "creator_fashion_06_pose_variant_3",
+            "creator_fashion_06_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_07",
+          "name": "denim styling",
+          "location_id": "creator_fashion_07_location",
+          "pose_id": "creator_fashion_07_pose",
+          "pose_ids": [
+            "creator_fashion_07_pose",
+            "creator_fashion_07_pose_variant_1",
+            "creator_fashion_07_pose_variant_2",
+            "creator_fashion_07_pose_variant_3",
+            "creator_fashion_07_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_08",
+          "name": "evening outfit",
+          "location_id": "creator_fashion_08_location",
+          "pose_id": "creator_fashion_08_pose",
+          "pose_ids": [
+            "creator_fashion_08_pose",
+            "creator_fashion_08_pose_variant_1",
+            "creator_fashion_08_pose_variant_2",
+            "creator_fashion_08_pose_variant_3",
+            "creator_fashion_08_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_09",
+          "name": "knitwear detail",
+          "location_id": "creator_fashion_09_location",
+          "pose_id": "creator_fashion_09_pose",
+          "pose_ids": [
+            "creator_fashion_09_pose",
+            "creator_fashion_09_pose_variant_1",
+            "creator_fashion_09_pose_variant_2",
+            "creator_fashion_09_pose_variant_3",
+            "creator_fashion_09_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_10",
+          "name": "monochrome outfit",
+          "location_id": "creator_fashion_10_location",
+          "pose_id": "creator_fashion_10_pose",
+          "pose_ids": [
+            "creator_fashion_10_pose",
+            "creator_fashion_10_pose_variant_1",
+            "creator_fashion_10_pose_variant_2",
+            "creator_fashion_10_pose_variant_3",
+            "creator_fashion_10_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_11",
+          "name": "accessory detail",
+          "location_id": "creator_fashion_11_location",
+          "pose_id": "creator_fashion_11_pose",
+          "pose_ids": [
+            "creator_fashion_11_pose",
+            "creator_fashion_11_pose_variant_1",
+            "creator_fashion_11_pose_variant_2",
+            "creator_fashion_11_pose_variant_3",
+            "creator_fashion_11_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fashion_12",
+          "name": "runway inspired",
+          "location_id": "creator_fashion_12_location",
+          "pose_id": "creator_fashion_12_pose",
+          "pose_ids": [
+            "creator_fashion_12_pose",
+            "creator_fashion_12_pose_variant_1",
+            "creator_fashion_12_pose_variant_2",
+            "creator_fashion_12_pose_variant_3",
+            "creator_fashion_12_pose_variant_4"
+          ],
+          "items": [
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "streetwear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_fashion_01_pose",
+        "creator_fashion_02_pose",
+        "creator_fashion_03_pose",
+        "creator_fashion_04_pose",
+        "creator_fashion_05_pose",
+        "creator_fashion_06_pose",
+        "creator_fashion_07_pose",
+        "creator_fashion_08_pose",
+        "creator_fashion_09_pose",
+        "creator_fashion_10_pose",
+        "creator_fashion_11_pose",
+        "creator_fashion_12_pose"
+      ],
+      "item_ids": [
+        "advanced_object_identity_bag_tote_bag"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_streetwear",
+        "creator_wardrobe_dressy",
+        "creator_wardrobe_editorial"
+      ],
+      "accessory_ids": [
+        "accessory_sunglasses",
+        "accessory_earrings_stud"
+      ]
+    },
+    "beauty": {
+      "name": "Beauty",
+      "scenarios": [
+        {
+          "id": "creator_beauty_01",
+          "name": "skincare preparation",
+          "location_id": "creator_beauty_01_location",
+          "pose_id": "creator_beauty_01_pose",
+          "pose_ids": [
+            "creator_beauty_01_pose",
+            "creator_beauty_01_pose_variant_1",
+            "creator_beauty_01_pose_variant_2",
+            "creator_beauty_01_pose_variant_3",
+            "creator_beauty_01_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_medium_shot",
+            "shot_waist_up"
+          ]
+        },
+        {
+          "id": "creator_beauty_02",
+          "name": "makeup preparation",
+          "location_id": "creator_beauty_02_location",
+          "pose_id": "creator_beauty_02_pose",
+          "pose_ids": [
+            "creator_beauty_02_pose",
+            "creator_beauty_02_pose_variant_1",
+            "creator_beauty_02_pose_variant_2",
+            "creator_beauty_02_pose_variant_3",
+            "creator_beauty_02_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_03",
+          "name": "lip color check",
+          "location_id": "creator_beauty_03_location",
+          "pose_id": "creator_beauty_03_pose",
+          "pose_ids": [
+            "creator_beauty_03_pose",
+            "creator_beauty_03_pose_variant_1",
+            "creator_beauty_03_pose_variant_2",
+            "creator_beauty_03_pose_variant_3",
+            "creator_beauty_03_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_lipstick"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_medium_shot",
+            "shot_waist_up"
+          ]
+        },
+        {
+          "id": "creator_beauty_04",
+          "name": "hair finish",
+          "location_id": "creator_beauty_04_location",
+          "pose_id": "creator_beauty_04_pose",
+          "pose_ids": [
+            "creator_beauty_04_pose",
+            "creator_beauty_04_pose_variant_1",
+            "creator_beauty_04_pose_variant_2",
+            "creator_beauty_04_pose_variant_3",
+            "creator_beauty_04_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_05",
+          "name": "morning routine",
+          "location_id": "creator_beauty_05_location",
+          "pose_id": "creator_beauty_05_pose",
+          "pose_ids": [
+            "creator_beauty_05_pose",
+            "creator_beauty_05_pose_variant_1",
+            "creator_beauty_05_pose_variant_2",
+            "creator_beauty_05_pose_variant_3",
+            "creator_beauty_05_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_06",
+          "name": "evening routine",
+          "location_id": "creator_beauty_06_location",
+          "pose_id": "creator_beauty_06_pose",
+          "pose_ids": [
+            "creator_beauty_06_pose",
+            "creator_beauty_06_pose_variant_1",
+            "creator_beauty_06_pose_variant_2",
+            "creator_beauty_06_pose_variant_3",
+            "creator_beauty_06_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_07",
+          "name": "product texture",
+          "location_id": "creator_beauty_07_location",
+          "pose_id": "creator_beauty_07_pose",
+          "pose_ids": [
+            "creator_beauty_07_pose",
+            "creator_beauty_07_pose_variant_1",
+            "creator_beauty_07_pose_variant_2",
+            "creator_beauty_07_pose_variant_3",
+            "creator_beauty_07_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_medium_shot",
+            "shot_waist_up"
+          ]
+        },
+        {
+          "id": "creator_beauty_08",
+          "name": "minimal makeup",
+          "location_id": "creator_beauty_08_location",
+          "pose_id": "creator_beauty_08_pose",
+          "pose_ids": [
+            "creator_beauty_08_pose",
+            "creator_beauty_08_pose_variant_1",
+            "creator_beauty_08_pose_variant_2",
+            "creator_beauty_08_pose_variant_3",
+            "creator_beauty_08_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_09",
+          "name": "braid detail",
+          "location_id": "creator_beauty_09_location",
+          "pose_id": "creator_beauty_09_pose",
+          "pose_ids": [
+            "creator_beauty_09_pose",
+            "creator_beauty_09_pose_variant_1",
+            "creator_beauty_09_pose_variant_2",
+            "creator_beauty_09_pose_variant_3",
+            "creator_beauty_09_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_10",
+          "name": "manicure detail",
+          "location_id": "creator_beauty_10_location",
+          "pose_id": "creator_beauty_10_pose",
+          "pose_ids": [
+            "creator_beauty_10_pose",
+            "creator_beauty_10_pose_variant_1",
+            "creator_beauty_10_pose_variant_2",
+            "creator_beauty_10_pose_variant_3",
+            "creator_beauty_10_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_11",
+          "name": "fresh face",
+          "location_id": "creator_beauty_11_location",
+          "pose_id": "creator_beauty_11_pose",
+          "pose_ids": [
+            "creator_beauty_11_pose",
+            "creator_beauty_11_pose_variant_1",
+            "creator_beauty_11_pose_variant_2",
+            "creator_beauty_11_pose_variant_3",
+            "creator_beauty_11_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_beauty_12",
+          "name": "beauty portrait",
+          "location_id": "creator_beauty_12_location",
+          "pose_id": "creator_beauty_12_pose",
+          "pose_ids": [
+            "creator_beauty_12_pose",
+            "creator_beauty_12_pose_variant_1",
+            "creator_beauty_12_pose_variant_2",
+            "creator_beauty_12_pose_variant_3",
+            "creator_beauty_12_pose_variant_4"
+          ],
+          "items": [
+            "creator_item_serum",
+            "creator_item_lipstick"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_closeup_portrait",
+            "shot_bust_shot",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_beauty_01_pose",
+        "creator_beauty_02_pose",
+        "creator_beauty_03_pose",
+        "creator_beauty_04_pose",
+        "creator_beauty_05_pose",
+        "creator_beauty_06_pose",
+        "creator_beauty_07_pose",
+        "creator_beauty_08_pose",
+        "creator_beauty_09_pose",
+        "creator_beauty_10_pose",
+        "creator_beauty_11_pose",
+        "creator_beauty_12_pose"
+      ],
+      "item_ids": [
+        "creator_item_serum",
+        "creator_item_lipstick"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_smart_casual"
+      ],
+      "accessory_ids": [
+        "accessory_sunglasses",
+        "accessory_earrings_stud"
+      ]
+    },
+    "fitness": {
+      "name": "Fitness",
+      "scenarios": [
+        {
+          "id": "creator_fitness_01",
+          "name": "warmup",
+          "location_id": "creator_fitness_01_location",
+          "pose_id": "creator_fitness_01_pose",
+          "pose_ids": [
+            "creator_fitness_01_pose",
+            "creator_fitness_01_pose_variant_1",
+            "creator_fitness_01_pose_variant_2",
+            "creator_fitness_01_pose_variant_3",
+            "creator_fitness_01_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_02",
+          "name": "cooldown",
+          "location_id": "creator_fitness_02_location",
+          "pose_id": "creator_fitness_02_pose",
+          "pose_ids": [
+            "creator_fitness_02_pose",
+            "creator_fitness_02_pose_variant_1",
+            "creator_fitness_02_pose_variant_2",
+            "creator_fitness_02_pose_variant_3",
+            "creator_fitness_02_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_03",
+          "name": "training preparation",
+          "location_id": "creator_fitness_03_location",
+          "pose_id": "creator_fitness_03_pose",
+          "pose_ids": [
+            "creator_fitness_03_pose",
+            "creator_fitness_03_pose_variant_1",
+            "creator_fitness_03_pose_variant_2",
+            "creator_fitness_03_pose_variant_3",
+            "creator_fitness_03_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_04",
+          "name": "running pause",
+          "location_id": "creator_fitness_04_location",
+          "pose_id": "creator_fitness_04_pose",
+          "pose_ids": [
+            "creator_fitness_04_pose",
+            "creator_fitness_04_pose_variant_1",
+            "creator_fitness_04_pose_variant_2",
+            "creator_fitness_04_pose_variant_3",
+            "creator_fitness_04_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_05",
+          "name": "mobility routine",
+          "location_id": "creator_fitness_05_location",
+          "pose_id": "creator_fitness_05_pose",
+          "pose_ids": [
+            "creator_fitness_05_pose",
+            "creator_fitness_05_pose_variant_1",
+            "creator_fitness_05_pose_variant_2",
+            "creator_fitness_05_pose_variant_3",
+            "creator_fitness_05_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_06",
+          "name": "balance practice",
+          "location_id": "creator_fitness_06_location",
+          "pose_id": "creator_fitness_06_pose",
+          "pose_ids": [
+            "creator_fitness_06_pose",
+            "creator_fitness_06_pose_variant_1",
+            "creator_fitness_06_pose_variant_2",
+            "creator_fitness_06_pose_variant_3",
+            "creator_fitness_06_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_07",
+          "name": "recovery break",
+          "location_id": "creator_fitness_07_location",
+          "pose_id": "creator_fitness_07_pose",
+          "pose_ids": [
+            "creator_fitness_07_pose",
+            "creator_fitness_07_pose_variant_1",
+            "creator_fitness_07_pose_variant_2",
+            "creator_fitness_07_pose_variant_3",
+            "creator_fitness_07_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_08",
+          "name": "track arrival",
+          "location_id": "creator_fitness_08_location",
+          "pose_id": "creator_fitness_08_pose",
+          "pose_ids": [
+            "creator_fitness_08_pose",
+            "creator_fitness_08_pose_variant_1",
+            "creator_fitness_08_pose_variant_2",
+            "creator_fitness_08_pose_variant_3",
+            "creator_fitness_08_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_09",
+          "name": "post workout",
+          "location_id": "creator_fitness_09_location",
+          "pose_id": "creator_fitness_09_pose",
+          "pose_ids": [
+            "creator_fitness_09_pose",
+            "creator_fitness_09_pose_variant_1",
+            "creator_fitness_09_pose_variant_2",
+            "creator_fitness_09_pose_variant_3",
+            "creator_fitness_09_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_10",
+          "name": "stretch routine",
+          "location_id": "creator_fitness_10_location",
+          "pose_id": "creator_fitness_10_pose",
+          "pose_ids": [
+            "creator_fitness_10_pose",
+            "creator_fitness_10_pose_variant_1",
+            "creator_fitness_10_pose_variant_2",
+            "creator_fitness_10_pose_variant_3",
+            "creator_fitness_10_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_11",
+          "name": "studio preparation",
+          "location_id": "creator_fitness_11_location",
+          "pose_id": "creator_fitness_11_pose",
+          "pose_ids": [
+            "creator_fitness_11_pose",
+            "creator_fitness_11_pose_variant_1",
+            "creator_fitness_11_pose_variant_2",
+            "creator_fitness_11_pose_variant_3",
+            "creator_fitness_11_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_fitness_12",
+          "name": "stairs recovery",
+          "location_id": "creator_fitness_12_location",
+          "pose_id": "creator_fitness_12_pose",
+          "pose_ids": [
+            "creator_fitness_12_pose",
+            "creator_fitness_12_pose_variant_1",
+            "creator_fitness_12_pose_variant_2",
+            "creator_fitness_12_pose_variant_3",
+            "creator_fitness_12_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_fitness_01_pose",
+        "creator_fitness_02_pose",
+        "creator_fitness_03_pose",
+        "creator_fitness_04_pose",
+        "creator_fitness_05_pose",
+        "creator_fitness_06_pose",
+        "creator_fitness_07_pose",
+        "creator_fitness_08_pose",
+        "creator_fitness_09_pose",
+        "creator_fitness_10_pose",
+        "creator_fitness_11_pose",
+        "creator_fitness_12_pose"
+      ],
+      "item_ids": [
+        "object_detail_catalog_identity_15"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_activewear"
+      ],
+      "accessory_ids": [
+        "accessory_hat_baseball_cap"
+      ]
+    },
+    "travel": {
+      "name": "Travel",
+      "scenarios": [
+        {
+          "id": "creator_travel_01",
+          "name": "hotel arrival",
+          "location_id": "creator_travel_01_location",
+          "pose_id": "creator_travel_01_pose",
+          "pose_ids": [
+            "creator_travel_01_pose",
+            "creator_travel_01_pose_variant_1",
+            "creator_travel_01_pose_variant_2",
+            "creator_travel_01_pose_variant_3",
+            "creator_travel_01_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_02",
+          "name": "city sightseeing",
+          "location_id": "creator_travel_02_location",
+          "pose_id": "creator_travel_02_pose",
+          "pose_ids": [
+            "creator_travel_02_pose",
+            "creator_travel_02_pose_variant_1",
+            "creator_travel_02_pose_variant_2",
+            "creator_travel_02_pose_variant_3",
+            "creator_travel_02_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_03",
+          "name": "waterfront visit",
+          "location_id": "creator_travel_03_location",
+          "pose_id": "creator_travel_03_pose",
+          "pose_ids": [
+            "creator_travel_03_pose",
+            "creator_travel_03_pose_variant_1",
+            "creator_travel_03_pose_variant_2",
+            "creator_travel_03_pose_variant_3",
+            "creator_travel_03_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_04",
+          "name": "station departure",
+          "location_id": "creator_travel_04_location",
+          "pose_id": "creator_travel_04_pose",
+          "pose_ids": [
+            "creator_travel_04_pose",
+            "creator_travel_04_pose_variant_1",
+            "creator_travel_04_pose_variant_2",
+            "creator_travel_04_pose_variant_3",
+            "creator_travel_04_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_05",
+          "name": "airport pause",
+          "location_id": "creator_travel_05_location",
+          "pose_id": "creator_travel_05_pose",
+          "pose_ids": [
+            "creator_travel_05_pose",
+            "creator_travel_05_pose_variant_1",
+            "creator_travel_05_pose_variant_2",
+            "creator_travel_05_pose_variant_3",
+            "creator_travel_05_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_06",
+          "name": "old town stroll",
+          "location_id": "creator_travel_06_location",
+          "pose_id": "creator_travel_06_pose",
+          "pose_ids": [
+            "creator_travel_06_pose",
+            "creator_travel_06_pose_variant_1",
+            "creator_travel_06_pose_variant_2",
+            "creator_travel_06_pose_variant_3",
+            "creator_travel_06_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_07",
+          "name": "viewpoint stop",
+          "location_id": "creator_travel_07_location",
+          "pose_id": "creator_travel_07_pose",
+          "pose_ids": [
+            "creator_travel_07_pose",
+            "creator_travel_07_pose_variant_1",
+            "creator_travel_07_pose_variant_2",
+            "creator_travel_07_pose_variant_3",
+            "creator_travel_07_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_08",
+          "name": "hotel morning",
+          "location_id": "creator_travel_08_location",
+          "pose_id": "creator_travel_08_pose",
+          "pose_ids": [
+            "creator_travel_08_pose",
+            "creator_travel_08_pose_variant_1",
+            "creator_travel_08_pose_variant_2",
+            "creator_travel_08_pose_variant_3",
+            "creator_travel_08_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_09",
+          "name": "garden visit",
+          "location_id": "creator_travel_09_location",
+          "pose_id": "creator_travel_09_pose",
+          "pose_ids": [
+            "creator_travel_09_pose",
+            "creator_travel_09_pose_variant_1",
+            "creator_travel_09_pose_variant_2",
+            "creator_travel_09_pose_variant_3",
+            "creator_travel_09_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_10",
+          "name": "museum visit",
+          "location_id": "creator_travel_10_location",
+          "pose_id": "creator_travel_10_pose",
+          "pose_ids": [
+            "creator_travel_10_pose",
+            "creator_travel_10_pose_variant_1",
+            "creator_travel_10_pose_variant_2",
+            "creator_travel_10_pose_variant_3",
+            "creator_travel_10_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_11",
+          "name": "resort walk",
+          "location_id": "creator_travel_11_location",
+          "pose_id": "creator_travel_11_pose",
+          "pose_ids": [
+            "creator_travel_11_pose",
+            "creator_travel_11_pose_variant_1",
+            "creator_travel_11_pose_variant_2",
+            "creator_travel_11_pose_variant_3",
+            "creator_travel_11_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_travel_12",
+          "name": "weekend departure",
+          "location_id": "creator_travel_12_location",
+          "pose_id": "creator_travel_12_pose",
+          "pose_ids": [
+            "creator_travel_12_pose",
+            "creator_travel_12_pose_variant_1",
+            "creator_travel_12_pose_variant_2",
+            "creator_travel_12_pose_variant_3",
+            "creator_travel_12_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_44",
+            "advanced_object_identity_bag_tote_bag",
+            "expansion_1000_object_detail_electronics_compact_film_camera"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_travel_01_pose",
+        "creator_travel_02_pose",
+        "creator_travel_03_pose",
+        "creator_travel_04_pose",
+        "creator_travel_05_pose",
+        "creator_travel_06_pose",
+        "creator_travel_07_pose",
+        "creator_travel_08_pose",
+        "creator_travel_09_pose",
+        "creator_travel_10_pose",
+        "creator_travel_11_pose",
+        "creator_travel_12_pose"
+      ],
+      "item_ids": [
+        "object_detail_catalog_identity_44",
+        "advanced_object_identity_bag_tote_bag",
+        "expansion_1000_object_detail_electronics_compact_film_camera"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_smart_casual",
+        "creator_wardrobe_streetwear"
+      ],
+      "accessory_ids": [
+        "accessory_sunglasses",
+        "accessory_earrings_stud"
+      ]
+    },
+    "automotive": {
+      "name": "Automotive",
+      "scenarios": [
+        {
+          "id": "creator_automotive_01",
+          "name": "parked car portrait",
+          "location_id": "creator_automotive_01_location",
+          "pose_id": "creator_automotive_01_pose",
+          "pose_ids": [
+            "creator_automotive_01_pose",
+            "creator_automotive_01_pose_variant_1",
+            "creator_automotive_01_pose_variant_2",
+            "creator_automotive_01_pose_variant_3",
+            "creator_automotive_01_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_02",
+          "name": "drift paddock",
+          "location_id": "creator_automotive_02_location",
+          "pose_id": "creator_automotive_02_pose",
+          "pose_ids": [
+            "creator_automotive_02_pose",
+            "creator_automotive_02_pose_variant_1",
+            "creator_automotive_02_pose_variant_2",
+            "creator_automotive_02_pose_variant_3",
+            "creator_automotive_02_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_drift_nissan_silvia_s13",
+            "vehicle_type_drift_nissan_silvia_s14",
+            "vehicle_type_drift_nissan_silvia_s15",
+            "vehicle_type_drift_nissan_180sx",
+            "vehicle_type_drift_nissan_240sx",
+            "vehicle_type_drift_nissan_350z",
+            "vehicle_type_drift_nissan_370z",
+            "vehicle_type_drift_nissan_skyline_r32_gts_t",
+            "vehicle_type_drift_nissan_skyline_r33_gts25t",
+            "vehicle_type_drift_toyota_corolla_levin_ae86",
+            "vehicle_type_drift_toyota_sprinter_trueno_ae86",
+            "vehicle_type_drift_toyota_chaser_jzx90",
+            "vehicle_type_drift_toyota_chaser_jzx100",
+            "vehicle_type_drift_toyota_mark_ii_jzx100",
+            "vehicle_type_drift_toyota_cresta_jzx100",
+            "vehicle_type_drift_toyota_soarer_z30",
+            "vehicle_type_drift_toyota_supra_a80",
+            "vehicle_type_drift_mazda_rx_7_fc",
+            "vehicle_type_drift_mazda_rx_7_fd",
+            "vehicle_type_drift_mazda_rx_8",
+            "vehicle_type_drift_bmw_3_series_e30",
+            "vehicle_type_drift_bmw_3_series_e36",
+            "vehicle_type_drift_bmw_3_series_e46",
+            "vehicle_type_drift_lexus_is300",
+            "vehicle_type_drift_ford_mustang_s550"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_03",
+          "name": "garage portrait",
+          "location_id": "creator_automotive_03_location",
+          "pose_id": "creator_automotive_03_pose",
+          "pose_ids": [
+            "creator_automotive_03_pose",
+            "creator_automotive_03_pose_variant_1",
+            "creator_automotive_03_pose_variant_2",
+            "creator_automotive_03_pose_variant_3",
+            "creator_automotive_03_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_04",
+          "name": "driveway outfit",
+          "location_id": "creator_automotive_04_location",
+          "pose_id": "creator_automotive_04_pose",
+          "pose_ids": [
+            "creator_automotive_04_pose",
+            "creator_automotive_04_pose_variant_1",
+            "creator_automotive_04_pose_variant_2",
+            "creator_automotive_04_pose_variant_3",
+            "creator_automotive_04_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_05",
+          "name": "driving day trip",
+          "location_id": "creator_automotive_05_location",
+          "pose_id": "creator_automotive_05_pose",
+          "pose_ids": [
+            "creator_automotive_05_pose",
+            "creator_automotive_05_pose_variant_1",
+            "creator_automotive_05_pose_variant_2",
+            "creator_automotive_05_pose_variant_3",
+            "creator_automotive_05_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "driving",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_06",
+          "name": "door arrival",
+          "location_id": "creator_automotive_06_location",
+          "pose_id": "creator_automotive_06_pose",
+          "pose_ids": [
+            "creator_automotive_06_pose",
+            "creator_automotive_06_pose_variant_1",
+            "creator_automotive_06_pose_variant_2",
+            "creator_automotive_06_pose_variant_3",
+            "creator_automotive_06_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_07",
+          "name": "interior pause",
+          "location_id": "creator_automotive_07_location",
+          "pose_id": "creator_automotive_07_pose",
+          "pose_ids": [
+            "creator_automotive_07_pose",
+            "creator_automotive_07_pose_variant_1",
+            "creator_automotive_07_pose_variant_2",
+            "creator_automotive_07_pose_variant_3",
+            "creator_automotive_07_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "sitting_driver",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_08",
+          "name": "hood portrait",
+          "location_id": "creator_automotive_08_location",
+          "pose_id": "creator_automotive_08_pose",
+          "pose_ids": [
+            "creator_automotive_08_pose",
+            "creator_automotive_08_pose_variant_1",
+            "creator_automotive_08_pose_variant_2",
+            "creator_automotive_08_pose_variant_3",
+            "creator_automotive_08_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_09",
+          "name": "sunset parking",
+          "location_id": "creator_automotive_09_location",
+          "pose_id": "creator_automotive_09_pose",
+          "pose_ids": [
+            "creator_automotive_09_pose",
+            "creator_automotive_09_pose_variant_1",
+            "creator_automotive_09_pose_variant_2",
+            "creator_automotive_09_pose_variant_3",
+            "creator_automotive_09_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_10",
+          "name": "clean car presentation",
+          "location_id": "creator_automotive_10_location",
+          "pose_id": "creator_automotive_10_pose",
+          "pose_ids": [
+            "creator_automotive_10_pose",
+            "creator_automotive_10_pose_variant_1",
+            "creator_automotive_10_pose_variant_2",
+            "creator_automotive_10_pose_variant_3",
+            "creator_automotive_10_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_0",
+            "vehicle_type_1",
+            "vehicle_type_2",
+            "vehicle_type_3",
+            "vehicle_type_4",
+            "vehicle_type_5",
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_8",
+            "vehicle_type_9",
+            "vehicle_type_10"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_11",
+          "name": "track day arrival",
+          "location_id": "creator_automotive_11_location",
+          "pose_id": "creator_automotive_11_pose",
+          "pose_ids": [
+            "creator_automotive_11_pose",
+            "creator_automotive_11_pose_variant_1",
+            "creator_automotive_11_pose_variant_2",
+            "creator_automotive_11_pose_variant_3",
+            "creator_automotive_11_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_6",
+            "vehicle_type_7",
+            "vehicle_type_17",
+            "vehicle_type_18"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_automotive_12",
+          "name": "classic car visit",
+          "location_id": "creator_automotive_12_location",
+          "pose_id": "creator_automotive_12_pose",
+          "pose_ids": [
+            "creator_automotive_12_pose",
+            "creator_automotive_12_pose_variant_1",
+            "creator_automotive_12_pose_variant_2",
+            "creator_automotive_12_pose_variant_3",
+            "creator_automotive_12_pose_variant_4"
+          ],
+          "items": [
+            "vehicle_type_8"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_automotive_01_pose",
+        "creator_automotive_02_pose",
+        "creator_automotive_03_pose",
+        "creator_automotive_04_pose",
+        "creator_automotive_05_pose",
+        "creator_automotive_06_pose",
+        "creator_automotive_07_pose",
+        "creator_automotive_08_pose",
+        "creator_automotive_09_pose",
+        "creator_automotive_10_pose",
+        "creator_automotive_11_pose",
+        "creator_automotive_12_pose"
+      ],
+      "item_ids": [
+        "vehicle_type_drift_nissan_silvia_s15"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_streetwear"
+      ],
+      "accessory_ids": [
+        "accessory_sunglasses",
+        "accessory_earrings_stud"
+      ]
+    },
+    "food_cafe": {
+      "name": "Food / Cafe",
+      "scenarios": [
+        {
+          "id": "creator_food_cafe_01",
+          "name": "coffee break",
+          "location_id": "creator_food_cafe_01_location",
+          "pose_id": "creator_food_cafe_01_pose",
+          "pose_ids": [
+            "creator_food_cafe_01_pose",
+            "creator_food_cafe_01_pose_variant_1",
+            "creator_food_cafe_01_pose_variant_2",
+            "creator_food_cafe_01_pose_variant_3",
+            "creator_food_cafe_01_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_02",
+          "name": "ordering pause",
+          "location_id": "creator_food_cafe_02_location",
+          "pose_id": "creator_food_cafe_02_pose",
+          "pose_ids": [
+            "creator_food_cafe_02_pose",
+            "creator_food_cafe_02_pose_variant_1",
+            "creator_food_cafe_02_pose_variant_2",
+            "creator_food_cafe_02_pose_variant_3",
+            "creator_food_cafe_02_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_03",
+          "name": "breakfast moment",
+          "location_id": "creator_food_cafe_03_location",
+          "pose_id": "creator_food_cafe_03_pose",
+          "pose_ids": [
+            "creator_food_cafe_03_pose",
+            "creator_food_cafe_03_pose_variant_1",
+            "creator_food_cafe_03_pose_variant_2",
+            "creator_food_cafe_03_pose_variant_3",
+            "creator_food_cafe_03_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_04",
+          "name": "bakery visit",
+          "location_id": "creator_food_cafe_04_location",
+          "pose_id": "creator_food_cafe_04_pose",
+          "pose_ids": [
+            "creator_food_cafe_04_pose",
+            "creator_food_cafe_04_pose_variant_1",
+            "creator_food_cafe_04_pose_variant_2",
+            "creator_food_cafe_04_pose_variant_3",
+            "creator_food_cafe_04_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_05",
+          "name": "cooking preparation",
+          "location_id": "creator_food_cafe_05_location",
+          "pose_id": "creator_food_cafe_05_pose",
+          "pose_ids": [
+            "creator_food_cafe_05_pose",
+            "creator_food_cafe_05_pose_variant_1",
+            "creator_food_cafe_05_pose_variant_2",
+            "creator_food_cafe_05_pose_variant_3",
+            "creator_food_cafe_05_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_06",
+          "name": "food presentation",
+          "location_id": "creator_food_cafe_06_location",
+          "pose_id": "creator_food_cafe_06_pose",
+          "pose_ids": [
+            "creator_food_cafe_06_pose",
+            "creator_food_cafe_06_pose_variant_1",
+            "creator_food_cafe_06_pose_variant_2",
+            "creator_food_cafe_06_pose_variant_3",
+            "creator_food_cafe_06_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_07",
+          "name": "afternoon tea",
+          "location_id": "creator_food_cafe_07_location",
+          "pose_id": "creator_food_cafe_07_pose",
+          "pose_ids": [
+            "creator_food_cafe_07_pose",
+            "creator_food_cafe_07_pose_variant_1",
+            "creator_food_cafe_07_pose_variant_2",
+            "creator_food_cafe_07_pose_variant_3",
+            "creator_food_cafe_07_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_08",
+          "name": "terrace lunch",
+          "location_id": "creator_food_cafe_08_location",
+          "pose_id": "creator_food_cafe_08_pose",
+          "pose_ids": [
+            "creator_food_cafe_08_pose",
+            "creator_food_cafe_08_pose_variant_1",
+            "creator_food_cafe_08_pose_variant_2",
+            "creator_food_cafe_08_pose_variant_3",
+            "creator_food_cafe_08_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_09",
+          "name": "market food stop",
+          "location_id": "creator_food_cafe_09_location",
+          "pose_id": "creator_food_cafe_09_pose",
+          "pose_ids": [
+            "creator_food_cafe_09_pose",
+            "creator_food_cafe_09_pose_variant_1",
+            "creator_food_cafe_09_pose_variant_2",
+            "creator_food_cafe_09_pose_variant_3",
+            "creator_food_cafe_09_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_10",
+          "name": "pastry pause",
+          "location_id": "creator_food_cafe_10_location",
+          "pose_id": "creator_food_cafe_10_pose",
+          "pose_ids": [
+            "creator_food_cafe_10_pose",
+            "creator_food_cafe_10_pose_variant_1",
+            "creator_food_cafe_10_pose_variant_2",
+            "creator_food_cafe_10_pose_variant_3",
+            "creator_food_cafe_10_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_11",
+          "name": "home brunch",
+          "location_id": "creator_food_cafe_11_location",
+          "pose_id": "creator_food_cafe_11_pose",
+          "pose_ids": [
+            "creator_food_cafe_11_pose",
+            "creator_food_cafe_11_pose_variant_1",
+            "creator_food_cafe_11_pose_variant_2",
+            "creator_food_cafe_11_pose_variant_3",
+            "creator_food_cafe_11_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_food_cafe_12",
+          "name": "recipe introduction",
+          "location_id": "creator_food_cafe_12_location",
+          "pose_id": "creator_food_cafe_12_pose",
+          "pose_ids": [
+            "creator_food_cafe_12_pose",
+            "creator_food_cafe_12_pose_variant_1",
+            "creator_food_cafe_12_pose_variant_2",
+            "creator_food_cafe_12_pose_variant_3",
+            "creator_food_cafe_12_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_food_cafe_01_pose",
+        "creator_food_cafe_02_pose",
+        "creator_food_cafe_03_pose",
+        "creator_food_cafe_04_pose",
+        "creator_food_cafe_05_pose",
+        "creator_food_cafe_06_pose",
+        "creator_food_cafe_07_pose",
+        "creator_food_cafe_08_pose",
+        "creator_food_cafe_09_pose",
+        "creator_food_cafe_10_pose",
+        "creator_food_cafe_11_pose",
+        "creator_food_cafe_12_pose"
+      ],
+      "item_ids": [
+        "interaction_object_coffee"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_smart_casual"
+      ],
+      "accessory_ids": []
+    },
+    "home": {
+      "name": "Home",
+      "scenarios": [
+        {
+          "id": "creator_home_01",
+          "name": "sofa pause",
+          "location_id": "creator_home_01_location",
+          "pose_id": "creator_home_01_pose",
+          "pose_ids": [
+            "creator_home_01_pose",
+            "creator_home_01_pose_variant_1",
+            "creator_home_01_pose_variant_2",
+            "creator_home_01_pose_variant_3",
+            "creator_home_01_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_02",
+          "name": "morning routine",
+          "location_id": "creator_home_02_location",
+          "pose_id": "creator_home_02_pose",
+          "pose_ids": [
+            "creator_home_02_pose",
+            "creator_home_02_pose_variant_1",
+            "creator_home_02_pose_variant_2",
+            "creator_home_02_pose_variant_3",
+            "creator_home_02_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_03",
+          "name": "reading corner",
+          "location_id": "creator_home_03_location",
+          "pose_id": "creator_home_03_pose",
+          "pose_ids": [
+            "creator_home_03_pose",
+            "creator_home_03_pose_variant_1",
+            "creator_home_03_pose_variant_2",
+            "creator_home_03_pose_variant_3",
+            "creator_home_03_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_04",
+          "name": "bedroom pause",
+          "location_id": "creator_home_04_location",
+          "pose_id": "creator_home_04_pose",
+          "pose_ids": [
+            "creator_home_04_pose",
+            "creator_home_04_pose_variant_1",
+            "creator_home_04_pose_variant_2",
+            "creator_home_04_pose_variant_3",
+            "creator_home_04_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_05",
+          "name": "mirror check",
+          "location_id": "creator_home_05_location",
+          "pose_id": "creator_home_05_pose",
+          "pose_ids": [
+            "creator_home_05_pose",
+            "creator_home_05_pose_variant_1",
+            "creator_home_05_pose_variant_2",
+            "creator_home_05_pose_variant_3",
+            "creator_home_05_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_06",
+          "name": "window light",
+          "location_id": "creator_home_06_location",
+          "pose_id": "creator_home_06_pose",
+          "pose_ids": [
+            "creator_home_06_pose",
+            "creator_home_06_pose_variant_1",
+            "creator_home_06_pose_variant_2",
+            "creator_home_06_pose_variant_3",
+            "creator_home_06_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_07",
+          "name": "balcony break",
+          "location_id": "creator_home_07_location",
+          "pose_id": "creator_home_07_pose",
+          "pose_ids": [
+            "creator_home_07_pose",
+            "creator_home_07_pose_variant_1",
+            "creator_home_07_pose_variant_2",
+            "creator_home_07_pose_variant_3",
+            "creator_home_07_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_08",
+          "name": "desk break",
+          "location_id": "creator_home_08_location",
+          "pose_id": "creator_home_08_pose",
+          "pose_ids": [
+            "creator_home_08_pose",
+            "creator_home_08_pose_variant_1",
+            "creator_home_08_pose_variant_2",
+            "creator_home_08_pose_variant_3",
+            "creator_home_08_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_09",
+          "name": "plant care pause",
+          "location_id": "creator_home_09_location",
+          "pose_id": "creator_home_09_pose",
+          "pose_ids": [
+            "creator_home_09_pose",
+            "creator_home_09_pose_variant_1",
+            "creator_home_09_pose_variant_2",
+            "creator_home_09_pose_variant_3",
+            "creator_home_09_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_10",
+          "name": "entryway outfit",
+          "location_id": "creator_home_10_location",
+          "pose_id": "creator_home_10_pose",
+          "pose_ids": [
+            "creator_home_10_pose",
+            "creator_home_10_pose_variant_1",
+            "creator_home_10_pose_variant_2",
+            "creator_home_10_pose_variant_3",
+            "creator_home_10_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_11",
+          "name": "weekend lounging",
+          "location_id": "creator_home_11_location",
+          "pose_id": "creator_home_11_pose",
+          "pose_ids": [
+            "creator_home_11_pose",
+            "creator_home_11_pose_variant_1",
+            "creator_home_11_pose_variant_2",
+            "creator_home_11_pose_variant_3",
+            "creator_home_11_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_home_12",
+          "name": "evening wind down",
+          "location_id": "creator_home_12_location",
+          "pose_id": "creator_home_12_pose",
+          "pose_ids": [
+            "creator_home_12_pose",
+            "creator_home_12_pose_variant_1",
+            "creator_home_12_pose_variant_2",
+            "creator_home_12_pose_variant_3",
+            "creator_home_12_pose_variant_4"
+          ],
+          "items": [
+            "everyday_object_paperback_book_4",
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_home_01_pose",
+        "creator_home_02_pose",
+        "creator_home_03_pose",
+        "creator_home_04_pose",
+        "creator_home_05_pose",
+        "creator_home_06_pose",
+        "creator_home_07_pose",
+        "creator_home_08_pose",
+        "creator_home_09_pose",
+        "creator_home_10_pose",
+        "creator_home_11_pose",
+        "creator_home_12_pose"
+      ],
+      "item_ids": [
+        "everyday_object_paperback_book_4",
+        "interaction_object_coffee"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual"
+      ],
+      "accessory_ids": []
+    },
+    "tech_gaming": {
+      "name": "Tech / Gaming",
+      "scenarios": [
+        {
+          "id": "creator_tech_gaming_01",
+          "name": "desk introduction",
+          "location_id": "creator_tech_gaming_01_location",
+          "pose_id": "creator_tech_gaming_01_pose",
+          "pose_ids": [
+            "creator_tech_gaming_01_pose",
+            "creator_tech_gaming_01_pose_variant_1",
+            "creator_tech_gaming_01_pose_variant_2",
+            "creator_tech_gaming_01_pose_variant_3",
+            "creator_tech_gaming_01_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_02",
+          "name": "gaming break",
+          "location_id": "creator_tech_gaming_02_location",
+          "pose_id": "creator_tech_gaming_02_pose",
+          "pose_ids": [
+            "creator_tech_gaming_02_pose",
+            "creator_tech_gaming_02_pose_variant_1",
+            "creator_tech_gaming_02_pose_variant_2",
+            "creator_tech_gaming_02_pose_variant_3",
+            "creator_tech_gaming_02_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_03",
+          "name": "keyboard detail",
+          "location_id": "creator_tech_gaming_03_location",
+          "pose_id": "creator_tech_gaming_03_pose",
+          "pose_ids": [
+            "creator_tech_gaming_03_pose",
+            "creator_tech_gaming_03_pose_variant_1",
+            "creator_tech_gaming_03_pose_variant_2",
+            "creator_tech_gaming_03_pose_variant_3",
+            "creator_tech_gaming_03_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_04",
+          "name": "headphone review",
+          "location_id": "creator_tech_gaming_04_location",
+          "pose_id": "creator_tech_gaming_04_pose",
+          "pose_ids": [
+            "creator_tech_gaming_04_pose",
+            "creator_tech_gaming_04_pose_variant_1",
+            "creator_tech_gaming_04_pose_variant_2",
+            "creator_tech_gaming_04_pose_variant_3",
+            "creator_tech_gaming_04_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_05",
+          "name": "controller demonstration",
+          "location_id": "creator_tech_gaming_05_location",
+          "pose_id": "creator_tech_gaming_05_pose",
+          "pose_ids": [
+            "creator_tech_gaming_05_pose",
+            "creator_tech_gaming_05_pose_variant_1",
+            "creator_tech_gaming_05_pose_variant_2",
+            "creator_tech_gaming_05_pose_variant_3",
+            "creator_tech_gaming_05_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_31"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_06",
+          "name": "workspace tour",
+          "location_id": "creator_tech_gaming_06_location",
+          "pose_id": "creator_tech_gaming_06_pose",
+          "pose_ids": [
+            "creator_tech_gaming_06_pose",
+            "creator_tech_gaming_06_pose_variant_1",
+            "creator_tech_gaming_06_pose_variant_2",
+            "creator_tech_gaming_06_pose_variant_3",
+            "creator_tech_gaming_06_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_07",
+          "name": "device unboxing",
+          "location_id": "creator_tech_gaming_07_location",
+          "pose_id": "creator_tech_gaming_07_pose",
+          "pose_ids": [
+            "creator_tech_gaming_07_pose",
+            "creator_tech_gaming_07_pose_variant_1",
+            "creator_tech_gaming_07_pose_variant_2",
+            "creator_tech_gaming_07_pose_variant_3",
+            "creator_tech_gaming_07_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_08",
+          "name": "stream preparation",
+          "location_id": "creator_tech_gaming_08_location",
+          "pose_id": "creator_tech_gaming_08_pose",
+          "pose_ids": [
+            "creator_tech_gaming_08_pose",
+            "creator_tech_gaming_08_pose_variant_1",
+            "creator_tech_gaming_08_pose_variant_2",
+            "creator_tech_gaming_08_pose_variant_3",
+            "creator_tech_gaming_08_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_09",
+          "name": "audio setup",
+          "location_id": "creator_tech_gaming_09_location",
+          "pose_id": "creator_tech_gaming_09_pose",
+          "pose_ids": [
+            "creator_tech_gaming_09_pose",
+            "creator_tech_gaming_09_pose_variant_1",
+            "creator_tech_gaming_09_pose_variant_2",
+            "creator_tech_gaming_09_pose_variant_3",
+            "creator_tech_gaming_09_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_10",
+          "name": "portable setup",
+          "location_id": "creator_tech_gaming_10_location",
+          "pose_id": "creator_tech_gaming_10_pose",
+          "pose_ids": [
+            "creator_tech_gaming_10_pose",
+            "creator_tech_gaming_10_pose_variant_1",
+            "creator_tech_gaming_10_pose_variant_2",
+            "creator_tech_gaming_10_pose_variant_3",
+            "creator_tech_gaming_10_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_11",
+          "name": "creative workflow",
+          "location_id": "creator_tech_gaming_11_location",
+          "pose_id": "creator_tech_gaming_11_pose",
+          "pose_ids": [
+            "creator_tech_gaming_11_pose",
+            "creator_tech_gaming_11_pose_variant_1",
+            "creator_tech_gaming_11_pose_variant_2",
+            "creator_tech_gaming_11_pose_variant_3",
+            "creator_tech_gaming_11_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_tech_gaming_12",
+          "name": "product introduction",
+          "location_id": "creator_tech_gaming_12_location",
+          "pose_id": "creator_tech_gaming_12_pose",
+          "pose_ids": [
+            "creator_tech_gaming_12_pose",
+            "creator_tech_gaming_12_pose_variant_1",
+            "creator_tech_gaming_12_pose_variant_2",
+            "creator_tech_gaming_12_pose_variant_3",
+            "creator_tech_gaming_12_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_5",
+            "object_detail_catalog_identity_31",
+            "object_detail_catalog_identity_30"
+          ],
+          "item_required": true,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_tech_gaming_01_pose",
+        "creator_tech_gaming_02_pose",
+        "creator_tech_gaming_03_pose",
+        "creator_tech_gaming_04_pose",
+        "creator_tech_gaming_05_pose",
+        "creator_tech_gaming_06_pose",
+        "creator_tech_gaming_07_pose",
+        "creator_tech_gaming_08_pose",
+        "creator_tech_gaming_09_pose",
+        "creator_tech_gaming_10_pose",
+        "creator_tech_gaming_11_pose",
+        "creator_tech_gaming_12_pose"
+      ],
+      "item_ids": [
+        "object_detail_catalog_identity_5",
+        "object_detail_catalog_identity_31",
+        "object_detail_catalog_identity_30"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_streetwear"
+      ],
+      "accessory_ids": []
+    },
+    "outdoor": {
+      "name": "Outdoor",
+      "scenarios": [
+        {
+          "id": "creator_outdoor_01",
+          "name": "trail pause",
+          "location_id": "creator_outdoor_01_location",
+          "pose_id": "creator_outdoor_01_pose",
+          "pose_ids": [
+            "creator_outdoor_01_pose",
+            "creator_outdoor_01_pose_variant_1",
+            "creator_outdoor_01_pose_variant_2",
+            "creator_outdoor_01_pose_variant_3",
+            "creator_outdoor_01_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_02",
+          "name": "overlook break",
+          "location_id": "creator_outdoor_02_location",
+          "pose_id": "creator_outdoor_02_pose",
+          "pose_ids": [
+            "creator_outdoor_02_pose",
+            "creator_outdoor_02_pose_variant_1",
+            "creator_outdoor_02_pose_variant_2",
+            "creator_outdoor_02_pose_variant_3",
+            "creator_outdoor_02_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_03",
+          "name": "park stroll",
+          "location_id": "creator_outdoor_03_location",
+          "pose_id": "creator_outdoor_03_pose",
+          "pose_ids": [
+            "creator_outdoor_03_pose",
+            "creator_outdoor_03_pose_variant_1",
+            "creator_outdoor_03_pose_variant_2",
+            "creator_outdoor_03_pose_variant_3",
+            "creator_outdoor_03_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_04",
+          "name": "lakeside pause",
+          "location_id": "creator_outdoor_04_location",
+          "pose_id": "creator_outdoor_04_pose",
+          "pose_ids": [
+            "creator_outdoor_04_pose",
+            "creator_outdoor_04_pose_variant_1",
+            "creator_outdoor_04_pose_variant_2",
+            "creator_outdoor_04_pose_variant_3",
+            "creator_outdoor_04_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_05",
+          "name": "garden walk",
+          "location_id": "creator_outdoor_05_location",
+          "pose_id": "creator_outdoor_05_pose",
+          "pose_ids": [
+            "creator_outdoor_05_pose",
+            "creator_outdoor_05_pose_variant_1",
+            "creator_outdoor_05_pose_variant_2",
+            "creator_outdoor_05_pose_variant_3",
+            "creator_outdoor_05_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_06",
+          "name": "beach stroll",
+          "location_id": "creator_outdoor_06_location",
+          "pose_id": "creator_outdoor_06_pose",
+          "pose_ids": [
+            "creator_outdoor_06_pose",
+            "creator_outdoor_06_pose_variant_1",
+            "creator_outdoor_06_pose_variant_2",
+            "creator_outdoor_06_pose_variant_3",
+            "creator_outdoor_06_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_07",
+          "name": "campsite morning",
+          "location_id": "creator_outdoor_07_location",
+          "pose_id": "creator_outdoor_07_pose",
+          "pose_ids": [
+            "creator_outdoor_07_pose",
+            "creator_outdoor_07_pose_variant_1",
+            "creator_outdoor_07_pose_variant_2",
+            "creator_outdoor_07_pose_variant_3",
+            "creator_outdoor_07_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_08",
+          "name": "forest rest",
+          "location_id": "creator_outdoor_08_location",
+          "pose_id": "creator_outdoor_08_pose",
+          "pose_ids": [
+            "creator_outdoor_08_pose",
+            "creator_outdoor_08_pose_variant_1",
+            "creator_outdoor_08_pose_variant_2",
+            "creator_outdoor_08_pose_variant_3",
+            "creator_outdoor_08_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_09",
+          "name": "hill walk",
+          "location_id": "creator_outdoor_09_location",
+          "pose_id": "creator_outdoor_09_pose",
+          "pose_ids": [
+            "creator_outdoor_09_pose",
+            "creator_outdoor_09_pose_variant_1",
+            "creator_outdoor_09_pose_variant_2",
+            "creator_outdoor_09_pose_variant_3",
+            "creator_outdoor_09_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_10",
+          "name": "coastal stop",
+          "location_id": "creator_outdoor_10_location",
+          "pose_id": "creator_outdoor_10_pose",
+          "pose_ids": [
+            "creator_outdoor_10_pose",
+            "creator_outdoor_10_pose_variant_1",
+            "creator_outdoor_10_pose_variant_2",
+            "creator_outdoor_10_pose_variant_3",
+            "creator_outdoor_10_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_11",
+          "name": "picnic pause",
+          "location_id": "creator_outdoor_11_location",
+          "pose_id": "creator_outdoor_11_pose",
+          "pose_ids": [
+            "creator_outdoor_11_pose",
+            "creator_outdoor_11_pose_variant_1",
+            "creator_outdoor_11_pose_variant_2",
+            "creator_outdoor_11_pose_variant_3",
+            "creator_outdoor_11_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_outdoor_12",
+          "name": "country ramble",
+          "location_id": "creator_outdoor_12_location",
+          "pose_id": "creator_outdoor_12_pose",
+          "pose_ids": [
+            "creator_outdoor_12_pose",
+            "creator_outdoor_12_pose_variant_1",
+            "creator_outdoor_12_pose_variant_2",
+            "creator_outdoor_12_pose_variant_3",
+            "creator_outdoor_12_pose_variant_4"
+          ],
+          "items": [
+            "object_detail_catalog_identity_15",
+            "advanced_object_identity_bag_tote_bag"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "activewear",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090"
+      ],
+      "body_ids": [
+        "creator_outdoor_01_pose",
+        "creator_outdoor_02_pose",
+        "creator_outdoor_03_pose",
+        "creator_outdoor_04_pose",
+        "creator_outdoor_05_pose",
+        "creator_outdoor_06_pose",
+        "creator_outdoor_07_pose",
+        "creator_outdoor_08_pose",
+        "creator_outdoor_09_pose",
+        "creator_outdoor_10_pose",
+        "creator_outdoor_11_pose",
+        "creator_outdoor_12_pose"
+      ],
+      "item_ids": [
+        "object_detail_catalog_identity_15",
+        "advanced_object_identity_bag_tote_bag"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_activewear",
+        "creator_wardrobe_casual"
+      ],
+      "accessory_ids": [
+        "accessory_hat_baseball_cap"
+      ]
+    },
+    "couple": {
+      "name": "Couple",
+      "scenarios": [
+        {
+          "id": "creator_couple_01",
+          "name": "shared walk",
+          "location_id": "creator_couple_01_location",
+          "pose_id": "creator_couple_01_pose",
+          "pose_ids": [
+            "creator_couple_01_pose",
+            "creator_couple_01_pose_variant_1",
+            "creator_couple_01_pose_variant_2",
+            "creator_couple_01_pose_variant_3",
+            "creator_couple_01_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_02",
+          "name": "coffee together",
+          "location_id": "creator_couple_02_location",
+          "pose_id": "creator_couple_02_pose",
+          "pose_ids": [
+            "creator_couple_02_pose",
+            "creator_couple_02_pose_variant_1",
+            "creator_couple_02_pose_variant_2",
+            "creator_couple_02_pose_variant_3",
+            "creator_couple_02_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_03",
+          "name": "sofa moment",
+          "location_id": "creator_couple_03_location",
+          "pose_id": "creator_couple_03_pose",
+          "pose_ids": [
+            "creator_couple_03_pose",
+            "creator_couple_03_pose_variant_1",
+            "creator_couple_03_pose_variant_2",
+            "creator_couple_03_pose_variant_3",
+            "creator_couple_03_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_04",
+          "name": "sunset pause",
+          "location_id": "creator_couple_04_location",
+          "pose_id": "creator_couple_04_pose",
+          "pose_ids": [
+            "creator_couple_04_pose",
+            "creator_couple_04_pose_variant_1",
+            "creator_couple_04_pose_variant_2",
+            "creator_couple_04_pose_variant_3",
+            "creator_couple_04_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_05",
+          "name": "hotel balcony",
+          "location_id": "creator_couple_05_location",
+          "pose_id": "creator_couple_05_pose",
+          "pose_ids": [
+            "creator_couple_05_pose",
+            "creator_couple_05_pose_variant_1",
+            "creator_couple_05_pose_variant_2",
+            "creator_couple_05_pose_variant_3",
+            "creator_couple_05_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_06",
+          "name": "garden visit",
+          "location_id": "creator_couple_06_location",
+          "pose_id": "creator_couple_06_pose",
+          "pose_ids": [
+            "creator_couple_06_pose",
+            "creator_couple_06_pose_variant_1",
+            "creator_couple_06_pose_variant_2",
+            "creator_couple_06_pose_variant_3",
+            "creator_couple_06_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_07",
+          "name": "city date",
+          "location_id": "creator_couple_07_location",
+          "pose_id": "creator_couple_07_pose",
+          "pose_ids": [
+            "creator_couple_07_pose",
+            "creator_couple_07_pose_variant_1",
+            "creator_couple_07_pose_variant_2",
+            "creator_couple_07_pose_variant_3",
+            "creator_couple_07_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_08",
+          "name": "home cooking break",
+          "location_id": "creator_couple_08_location",
+          "pose_id": "creator_couple_08_pose",
+          "pose_ids": [
+            "creator_couple_08_pose",
+            "creator_couple_08_pose_variant_1",
+            "creator_couple_08_pose_variant_2",
+            "creator_couple_08_pose_variant_3",
+            "creator_couple_08_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_09",
+          "name": "beach walk",
+          "location_id": "creator_couple_09_location",
+          "pose_id": "creator_couple_09_pose",
+          "pose_ids": [
+            "creator_couple_09_pose",
+            "creator_couple_09_pose_variant_1",
+            "creator_couple_09_pose_variant_2",
+            "creator_couple_09_pose_variant_3",
+            "creator_couple_09_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_10",
+          "name": "station reunion",
+          "location_id": "creator_couple_10_location",
+          "pose_id": "creator_couple_10_pose",
+          "pose_ids": [
+            "creator_couple_10_pose",
+            "creator_couple_10_pose_variant_1",
+            "creator_couple_10_pose_variant_2",
+            "creator_couple_10_pose_variant_3",
+            "creator_couple_10_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_11",
+          "name": "quiet embrace",
+          "location_id": "creator_couple_11_location",
+          "pose_id": "creator_couple_11_pose",
+          "pose_ids": [
+            "creator_couple_11_pose",
+            "creator_couple_11_pose_variant_1",
+            "creator_couple_11_pose_variant_2",
+            "creator_couple_11_pose_variant_3",
+            "creator_couple_11_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        },
+        {
+          "id": "creator_couple_12",
+          "name": "affectionate pause",
+          "location_id": "creator_couple_12_location",
+          "pose_id": "creator_couple_12_pose",
+          "pose_ids": [
+            "creator_couple_12_pose",
+            "creator_couple_12_pose_variant_1",
+            "creator_couple_12_pose_variant_2",
+            "creator_couple_12_pose_variant_3",
+            "creator_couple_12_pose_variant_4"
+          ],
+          "items": [
+            "interaction_object_coffee"
+          ],
+          "item_required": false,
+          "vehicle_action": "next_to",
+          "presentations": [
+            "phone_candid",
+            "polished_lifestyle",
+            "brand_editorial"
+          ],
+          "wardrobe": "casual",
+          "capture_method": "Rear-camera candid",
+          "framing": [
+            "shot_full_body",
+            "shot_three_quarter_body",
+            "shot_medium_shot"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "influencer_face_012",
+        "influencer_face_018",
+        "influencer_face_021",
+        "influencer_face_033",
+        "influencer_face_034",
+        "influencer_face_038",
+        "influencer_face_041",
+        "influencer_face_054",
+        "influencer_face_061",
+        "influencer_face_062",
+        "influencer_face_063",
+        "influencer_face_064",
+        "influencer_face_066",
+        "influencer_face_069",
+        "influencer_face_070",
+        "influencer_face_087",
+        "influencer_face_088",
+        "influencer_face_089",
+        "influencer_face_090",
+        "influencer_face_093",
+        "influencer_face_094",
+        "influencer_face_097"
+      ],
+      "body_ids": [
+        "creator_couple_01_pose",
+        "creator_couple_02_pose",
+        "creator_couple_03_pose",
+        "creator_couple_04_pose",
+        "creator_couple_05_pose",
+        "creator_couple_06_pose",
+        "creator_couple_07_pose",
+        "creator_couple_08_pose",
+        "creator_couple_09_pose",
+        "creator_couple_10_pose",
+        "creator_couple_11_pose",
+        "creator_couple_12_pose"
+      ],
+      "item_ids": [
+        "interaction_object_coffee"
+      ],
+      "wardrobe_ids": [
+        "creator_wardrobe_casual",
+        "creator_wardrobe_smart_casual",
+        "creator_wardrobe_dressy"
+      ],
+      "accessory_ids": []
+    }
+  },
+  "wardrobe": {
+    "casual": "casual_outfit",
+    "streetwear": "streetwear_outfit",
+    "smart_casual": "smart casual outfit with clean everyday tailoring",
+    "activewear": "practical athletic top and training trousers",
+    "dressy": "a refined evening outfit",
+    "editorial": "a coordinated contemporary editorial outfit"
+  },
+  "items": {
+    "book": "everyday_object_paperback_book_4",
+    "bag": "advanced_object_identity_bag_tote_bag",
+    "bottle": "object_detail_catalog_identity_15",
+    "coffee": "interaction_object_coffee",
+    "serum": "creator_item_serum",
+    "lipstick": "creator_item_lipstick",
+    "luggage": "object_detail_catalog_identity_44",
+    "headphones": "object_detail_catalog_identity_5",
+    "controller": "object_detail_catalog_identity_31",
+    "keyboard": "object_detail_catalog_identity_30",
+    "camera": "expansion_1000_object_detail_electronics_compact_film_camera",
+    "car": "vehicle_type_drift_nissan_silvia_s15"
+  },
+  "automatic_expression_directions": [
+    "natural",
+    "natural",
+    "confident",
+    "thoughtful",
+    "serious",
+    "soft_smile",
+    "big_smile",
+    "laughing",
+    "wink",
+    "blink",
+    "tongue_out",
+    "pout",
+    "surprised",
+    "cheeky",
+    "focused"
+  ]
+}
