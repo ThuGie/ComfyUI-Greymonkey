@@ -281,6 +281,19 @@ class GreymonkeySceneSubjectV2:
             actor["allow_random_props"] = True
             added.append(copy.deepcopy(obj))
             if action != "none": actor["interactions"].append(dict(target_ref=obj["ref"], action=action))
+            held_position = obj.get("details", {}).get("position", "")
+            if action.startswith("holding") and held_position.startswith("held "):
+                height = held_position.removeprefix("held ").removesuffix(" by the person holding it")
+                name = c.lookup("identities", obj["selected_ids"][0], "product")["name"]
+                grip = {"holding_two_handed": "with both hands", "holding_left_hand": "in the left hand", "holding_right_hand": "in the right hand", "holding_delicately": "with a delicate fingertip grip", "holding_on_palm": "on an open palm"}.get(action, "in the hands")
+                placement = f"Holding the {name} {grip} {height}."
+                if height == "at stomach height":
+                    placement += " The center of the object is directly in front of the abdomen at navel level, with the hands alongside the stomach and the chest visible above the object."
+                elif height == "at waist height":
+                    placement += " The object is centered at the waistline, with the hands lowered to waist level and the chest visible above it."
+                prior = actor["details"].get("interaction", "")
+                actor["details"]["interaction"] = " ".join(filter(None, [prior, placement]))
+
         elif related_object in ("Random", "random"):
             actor["random_related"] = {"action": relationship}
         elif related_object not in ("None", "none"):
