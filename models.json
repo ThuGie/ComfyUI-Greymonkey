@@ -44187,11 +44187,7 @@
                 "slot": "object_identity",
                 "colorable": true,
                 "capabilities": {
-                    "interaction_tags": [
-                        "handheld",
-                        "paper",
-                        "text_surface"
-                    ]
+                    "default_material": "paper"
                 }
             },
             {
@@ -44204,11 +44200,7 @@
                 "slot": "object_identity",
                 "colorable": true,
                 "capabilities": {
-                    "interaction_tags": [
-                        "handheld",
-                        "paper",
-                        "text_surface"
-                    ]
+                    "default_material": "cardstock"
                 }
             },
             {
@@ -44221,11 +44213,7 @@
                 "slot": "object_identity",
                 "colorable": true,
                 "capabilities": {
-                    "interaction_tags": [
-                        "handheld",
-                        "paper",
-                        "text_surface"
-                    ]
+                    "default_material": "paper"
                 }
             },
             {
@@ -44238,10 +44226,7 @@
                 "slot": "object_identity",
                 "colorable": true,
                 "capabilities": {
-                    "interaction_tags": [
-                        "handheld",
-                        "text_surface"
-                    ]
+                    "default_material": "cardboard"
                 }
             },
             {
@@ -44254,10 +44239,423 @@
                 "slot": "object_identity",
                 "colorable": true,
                 "capabilities": {
-                    "interaction_tags": [
-                        "handheld",
-                        "text_surface"
-                    ]
+                    "default_material": "whiteboard laminate"
+                }
+            },
+            {
+                "id": "text_surface_clipboard",
+                "name": "Clipboard with paper",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "wood and paper"
+                }
+            },
+            {
+                "id": "text_surface_certificate",
+                "name": "Certificate",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_letter",
+                "name": "Letter sheet",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_envelope",
+                "name": "Envelope",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_postcard",
+                "name": "Postcard",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardstock"
+                }
+            },
+            {
+                "id": "text_surface_greeting_card",
+                "name": "Greeting card",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardstock"
+                }
+            },
+            {
+                "id": "text_surface_business_card",
+                "name": "Business card",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardstock"
+                }
+            },
+            {
+                "id": "text_surface_notebook",
+                "name": "Notebook with printed cover",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper and cardboard"
+                }
+            },
+            {
+                "id": "text_surface_open_notebook",
+                "name": "Open notebook",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_menu",
+                "name": "Menu card",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardstock"
+                }
+            },
+            {
+                "id": "text_surface_newspaper",
+                "name": "Newspaper",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_magazine",
+                "name": "Magazine cover",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "glossy paper"
+                }
+            },
+            {
+                "id": "text_surface_chalkboard",
+                "name": "Handheld chalkboard",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "wood and slate"
+                }
+            },
+            {
+                "id": "text_surface_placard",
+                "name": "Protest placard",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardboard and wood"
+                }
+            },
+            {
+                "id": "text_surface_banner",
+                "name": "Fabric banner",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "fabric"
+                }
+            },
+            {
+                "id": "text_surface_pennant",
+                "name": "Pennant flag",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "fabric"
+                }
+            },
+            {
+                "id": "text_surface_gift_box",
+                "name": "Gift box with message",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardboard"
+                }
+            },
+            {
+                "id": "text_surface_shipping_box",
+                "name": "Shipping box",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardboard"
+                }
+            },
+            {
+                "id": "text_surface_shopping_bag",
+                "name": "Printed shopping bag",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_tote_bag",
+                "name": "Printed tote bag",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "canvas"
+                }
+            },
+            {
+                "id": "text_surface_folded_tshirt",
+                "name": "Folded printed T-shirt",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cotton"
+                }
+            },
+            {
+                "id": "text_surface_jersey",
+                "name": "Display jersey",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "fabric"
+                }
+            },
+            {
+                "id": "text_surface_name_badge",
+                "name": "Name badge",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "plastic"
+                }
+            },
+            {
+                "id": "text_surface_luggage_tag",
+                "name": "Luggage tag",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "leather"
+                }
+            },
+            {
+                "id": "text_surface_sticker",
+                "name": "Sticker sheet",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "paper"
+                }
+            },
+            {
+                "id": "text_surface_product_label",
+                "name": "Product label card",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "cardstock"
+                }
+            },
+            {
+                "id": "text_surface_bottle",
+                "name": "Bottle with printed label",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "glass"
+                }
+            },
+            {
+                "id": "text_surface_can",
+                "name": "Drink can with printed label",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "aluminum"
+                }
+            },
+            {
+                "id": "text_surface_phone",
+                "name": "Phone displaying text",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "glass and metal"
+                }
+            },
+            {
+                "id": "text_surface_tablet",
+                "name": "Tablet displaying text",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "glass and metal"
+                }
+            },
+            {
+                "id": "text_surface_lightbox",
+                "name": "Message lightbox",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "plastic"
+                }
+            },
+            {
+                "id": "text_surface_balloon",
+                "name": "Message balloon",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "default_material": "latex"
                 }
             }
         ],

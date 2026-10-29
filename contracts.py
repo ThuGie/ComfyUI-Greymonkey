@@ -172,6 +172,9 @@ def request_scene(recipe, seed, generation_theme=None):
                 actor.setdefault("interactions", []).append(dict(target_ref=related_ref, action=action))
     if len(actors) > 8:
         raise client.GreymonkeyError("Related objects would exceed the eight-subject limit.")
+    for actor in actors:
+        if actor.get("details", {}).get("position", "").startswith("held ") and not any(link.get("target_ref") == actor["ref"] and link.get("action", "").startswith("holding") for owner in actors for link in owner.get("interactions", [])):
+            raise client.GreymonkeyError("An object with Hold position needs a person holding it. Connect Scene Object.related_object to Scene Subject.object_settings, then connect the person's scene to the generator.")
     refs = {actor["ref"]: "subject-" + str(index + 1) for index, actor in enumerate(actors)}
     overrides = []
     for actor in actors:

@@ -116,9 +116,9 @@ class GreymonkeySceneObjectV2:
 
     @classmethod
     def INPUT_TYPES(cls):
-        return {"required": {"identity": choices("identities", "product"), "color": (["Unspecified", "Random", *c.COLORS],), "relationship": ([v for v in RELATIONSHIPS if v != "kissing"],)}, "optional": {"object_details": (DETAILS,), "previous_subjects": (SCENE,), "display_text": ("STRING", {"default": "", "multiline": True, "tooltip": "Exact words printed on this object. Leave empty for no requested text."}), "text_placement": (["centered on the front", "across the upper front", "across the lower front", "on the label", "on the screen", "on the cover", "on the side"],), "lettering": (["large clear printed lettering", "bold sans-serif lettering", "neat handwritten lettering", "serif lettering", "typewritten lettering"],), "text_color": (["black", "white", "red", "blue", "gold", "silver"],), "face_text_to_camera": ("BOOLEAN", {"default": True}), "object_position": (["unspecified", "on a table", "on a desk", "on the floor", "on a wall", "on a shelf", "in the foreground", "beside the person"],)}, "hidden": {"unique_id": "UNIQUE_ID"}}
+        return {"required": {"identity": choices("identities", "product"), "color": (["Unspecified", "Random", *c.COLORS],), "relationship": ([v for v in RELATIONSHIPS if v != "kissing"],)}, "optional": {"object_details": (DETAILS,), "previous_subjects": (SCENE,), "display_text": ("STRING", {"default": "", "multiline": True, "tooltip": "Exact words printed on this object. Leave empty for no requested text."}), "text_placement": (["centered on the front", "across the upper front", "across the lower front", "on the label", "on the screen", "on the cover", "on the side", "across the front panel", "on the lid", "on a hanging tag", "on the chest print", "on the banner", "on the open pages"],), "lettering": (["large clear printed lettering", "bold sans-serif lettering", "neat handwritten lettering", "serif lettering", "typewritten lettering"],), "text_color": (["black", "white", "red", "blue", "gold", "silver"],), "face_text_to_camera": ("BOOLEAN", {"default": True}), "object_position": (["unspecified", "on a table", "on a desk", "on the floor", "on a wall", "on a shelf", "in the foreground", "beside the person"],), "hold_position": (["unspecified", "at chest height", "at waist height", "at stomach height", "at shoulder height", "at eye level", "below the chin", "beside the face", "in front of the face", "above the head", "down beside the hip", "in front of the thighs", "resting on the lap", "extended toward the camera", "out to the left side", "out to the right side"], {"default": "unspecified", "tooltip": "Where the person holds the object. Independent of the hand/grip relationship."}), "object_orientation": (["unspecified", "upright portrait orientation", "horizontal landscape orientation", "tilted slightly clockwise", "tilted slightly counterclockwise"], {"default": "unspecified"})}, "hidden": {"unique_id": "UNIQUE_ID"}}
 
-    def build(self, identity, color="Unspecified", relationship="none", object_details=None, previous_subjects=None, unique_id=None, display_text="", text_placement="centered on the front", lettering="large clear printed lettering", text_color="black", face_text_to_camera=True, object_position="unspecified"):
+    def build(self, identity, color="Unspecified", relationship="none", object_details=None, previous_subjects=None, unique_id=None, display_text="", text_placement="centered on the front", lettering="large clear printed lettering", text_color="black", face_text_to_camera=True, object_position="unspecified", hold_position="unspecified", object_orientation="unspecified"):
         entry = c.lookup("identities", identity, "product")
         if entry is None:
             raise client.GreymonkeyError("Select an object identity in Scene Object; use the existing Random Scene node for unconstrained random objects.")
@@ -142,20 +142,32 @@ class GreymonkeySceneObjectV2:
         if not isinstance(display_text, str) or len(display_text) > 1000 or any(ord(ch) < 32 and ch not in "\n\t\r" for ch in display_text):
             raise client.GreymonkeyError("Object text must contain at most 1,000 characters without control characters.")
         allowed = self.INPUT_TYPES()["optional"]
-        for field, value in (("text_placement", text_placement), ("lettering", lettering), ("text_color", text_color), ("object_position", object_position)):
+        for field, value in (("text_placement", text_placement), ("lettering", lettering), ("text_color", text_color), ("object_position", object_position), ("hold_position", hold_position), ("object_orientation", object_orientation)):
             if value not in allowed[field][0]:
                 raise client.GreymonkeyError(f"Choose a supported {field.replace('_', ' ')}.")
         if type(face_text_to_camera) is not bool:
             raise client.GreymonkeyError("Text-facing-camera must be enabled or disabled.")
-        if object_position != "unspecified":
+        holding = relationship.startswith("holding")
+        if hold_position != "unspecified" and not holding:
+            raise client.GreymonkeyError("Hold position needs a holding relationship, such as holding_two_handed or holding_left_hand.")
+        if holding and object_position != "unspecified":
+            raise client.GreymonkeyError("Use Hold position for a held object; leave Object position unspecified. Object position is for placed objects.")
+        fixed_positions = {"holding_at_chest": "at chest height", "holding_near_face": "beside the face", "holding_at_arm_length": "extended toward the camera"}
+        if hold_position != "unspecified" and relationship in fixed_positions and hold_position != fixed_positions[relationship]:
+            raise client.GreymonkeyError("The relationship already specifies a different holding position. Choose a plain holding grip, then set Hold position.")
+        if hold_position != "unspecified":
+            actor["details"]["position"] = f"held {hold_position} by the person holding it"
+        elif object_position != "unspecified":
             actor["details"]["position"] = object_position
+        if object_orientation != "unspecified":
+            actor["details"]["features"] = object_orientation
         if display_text.strip():
             quoted = json.dumps(display_text, ensure_ascii=False)
             actor["details"]["description"] = f'The {entry["name"]} bears the exact text {quoted}, {text_placement}, in {text_color} {lettering}.'
             if face_text_to_camera:
                 actor["details"]["description"] += " Its text-bearing surface faces the camera, with the complete lettering visible and unobscured."
         if entry["id"].startswith("text_surface_"):
-            actor["details"].setdefault("material", "paper" if entry["id"] == "text_surface_a4_paper" else "cardstock" if entry["id"] in ("text_surface_card", "text_surface_poster") else "a flat sign surface")
+            actor["details"].setdefault("material", entry.get("capabilities", {}).get("default_material", "paper" if entry["id"] == "text_surface_a4_paper" else "cardstock" if entry["id"] in ("text_surface_card", "text_surface_poster") else "a flat sign surface"))
         previous = c.scene(previous_subjects)["subjects"] if previous_subjects is not None else []
         payload = c.envelope("object", subject=actor, relationship=relationship)
         return payload, c.scene(c.envelope("scene", mode="subjects", subjects=[*previous, actor]))
