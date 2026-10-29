@@ -161,11 +161,17 @@ class GreymonkeySceneObjectV2:
             actor["details"]["position"] = object_position
         if object_orientation != "unspecified":
             actor["details"]["features"] = object_orientation
+        if entry["id"] == "text_surface_a4_paper":
+            actor["details"]["dimensions"] = "a thin rectangular A4 sheet with its natural 1:1.414 proportions"
+            paper_shape = "flexible unmounted paper with a gentle uneven bow, subtle corner curl and a few faint handling creases; slight natural perspective foreshortening"
+            if holding:
+                paper_shape += "; fingertips lightly indent the edges at the grip points, with small contact shadows and slight buckling around the fingers"
+            actor["details"]["features"] = ", ".join(filter(None, [actor["details"].get("features"), paper_shape]))
         if display_text.strip():
             quoted = json.dumps(display_text, ensure_ascii=False)
             actor["details"]["description"] = f'The {entry["name"]} bears the exact text {quoted}, {text_placement}, in {text_color} {lettering}.'
             if face_text_to_camera:
-                actor["details"]["description"] += " Its text-bearing surface faces the camera, with the complete lettering visible and unobscured."
+                actor["details"]["description"] += " Its text-bearing surface is directed toward the camera at a natural angle, with the lettering readable and not covered by the grip. The lettering follows the surface curvature and perspective."
         if entry["id"].startswith("text_surface_"):
             actor["details"].setdefault("material", entry.get("capabilities", {}).get("default_material", "paper" if entry["id"] == "text_surface_a4_paper" else "cardstock" if entry["id"] in ("text_surface_card", "text_surface_poster") else "a flat sign surface"))
         previous = c.scene(previous_subjects)["subjects"] if previous_subjects is not None else []
