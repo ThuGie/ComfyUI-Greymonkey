@@ -162,14 +162,25 @@ class GreymonkeySceneObjectV2:
         if object_orientation != "unspecified":
             actor["details"]["features"] = object_orientation
         if entry["id"] == "text_surface_a4_paper":
-            actor["details"]["dimensions"] = "a thin rectangular A4 sheet with its natural 1:1.414 proportions"
+            actor["details"]["dimensions"] = "a standard thin A4 sheet, 21 cm wide by 29.7 cm tall in portrait orientation, narrower than the adult torso"
             paper_shape = "flexible unmounted paper with a gentle uneven bow, subtle corner curl and a few faint handling creases; slight natural perspective foreshortening"
             if holding:
                 paper_shape += "; fingertips lightly indent the edges at the grip points, with small contact shadows and slight buckling around the fingers"
             actor["details"]["features"] = ", ".join(filter(None, [actor["details"].get("features"), paper_shape]))
+        compact_sizes = {
+            "text_surface_postcard": "a small rigid postcard, 15 cm wide by 10 cm tall, approximately one adult hand-length wide",
+            "text_surface_card": "a small rectangular message card, 15 cm wide by 10 cm tall, approximately one adult hand-length wide",
+            "text_surface_business_card": "a standard business card, 8.5 cm wide by 5.5 cm tall, small enough to pinch between fingertips",
+            "text_surface_greeting_card": "a folded greeting card, 10.5 cm wide by 14.8 cm tall",
+            "text_surface_name_badge": "a small name badge, 9 cm wide by 6 cm tall",
+        }
+        if entry["id"] in compact_sizes:
+            actor["details"]["dimensions"] = compact_sizes[entry["id"]]
         if display_text.strip():
             quoted = json.dumps(display_text, ensure_ascii=False)
             actor["details"]["description"] = f'The {entry["name"]} bears the exact text {quoted}, {text_placement}, in {text_color} {lettering}.'
+            if entry["id"] in compact_sizes or entry["id"] == "text_surface_a4_paper":
+                actor["details"]["description"] += " Lettering fits within the stated physical size of this item, with ordinary margins."
             if face_text_to_camera:
                 actor["details"]["description"] += " Its text-bearing surface is directed toward the camera at a natural angle, with the lettering readable and not covered by the grip. The lettering follows the surface curvature and perspective."
         if entry["id"].startswith("text_surface_"):

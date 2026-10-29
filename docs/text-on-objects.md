@@ -37,3 +37,7 @@ The submitted recipe, submitted request and resolved scene carry the text in obj
 37 explicit surfaces include paper, message cards, posters, signs, whiteboards, clipboards, certificates, letters, envelopes, postcards, greeting/business cards, closed/open notebooks, menus, newspapers, magazine covers, chalkboards, placards, banners, pennants, gift/shipping boxes, shopping/tote bags, folded printed T-shirts, held-up jerseys, badges, luggage tags, stickers, product label cards, labeled bottles/cans, message phones/tablets, lightboxes and balloons.
 
 Clothing objects here are held/displayed items; these choices do not put the item onto the person's body. Existing object identities also accept display_text. Each text-specific identity is explicitly selectable but excluded from automatic random fill so it does not crowd ordinary random scenes.
+
+## Physical size and framing
+
+A4 now specifies 21 × 29.7 cm. For a smaller message use Postcard or Handheld message card (15 × 10 cm), Greeting card (10.5 × 14.8 cm), Business card (8.5 × 5.5 cm), or Name badge (9 × 6 cm). These dimensions are descriptive constraints, not guaranteed geometry. Short text and medium/three-quarter framing balance a small item with readable lettering; full-body shots leave fewer pixels for small text. Hold position remains independent of item size.
