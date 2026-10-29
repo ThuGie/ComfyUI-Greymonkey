@@ -116,9 +116,9 @@ class GreymonkeySceneObjectV2:
 
     @classmethod
     def INPUT_TYPES(cls):
-        return {"required": {"identity": choices("identities", "product"), "color": (["Unspecified", "Random", *c.COLORS],), "relationship": ([v for v in RELATIONSHIPS if v != "kissing"],)}, "optional": {"object_details": (DETAILS,), "previous_subjects": (SCENE,)}, "hidden": {"unique_id": "UNIQUE_ID"}}
+        return {"required": {"identity": choices("identities", "product"), "color": (["Unspecified", "Random", *c.COLORS],), "relationship": ([v for v in RELATIONSHIPS if v != "kissing"],)}, "optional": {"object_details": (DETAILS,), "previous_subjects": (SCENE,), "display_text": ("STRING", {"default": "", "multiline": True, "tooltip": "Exact words printed on this object. Leave empty for no requested text."}), "text_placement": (["centered on the front", "across the upper front", "across the lower front", "on the label", "on the screen", "on the cover", "on the side"],), "lettering": (["large clear printed lettering", "bold sans-serif lettering", "neat handwritten lettering", "serif lettering", "typewritten lettering"],), "text_color": (["black", "white", "red", "blue", "gold", "silver"],), "face_text_to_camera": ("BOOLEAN", {"default": True}), "object_position": (["unspecified", "on a table", "on a desk", "on the floor", "on a wall", "on a shelf", "in the foreground", "beside the person"],)}, "hidden": {"unique_id": "UNIQUE_ID"}}
 
-    def build(self, identity, color="Unspecified", relationship="none", object_details=None, previous_subjects=None, unique_id=None):
+    def build(self, identity, color="Unspecified", relationship="none", object_details=None, previous_subjects=None, unique_id=None, display_text="", text_placement="centered on the front", lettering="large clear printed lettering", text_color="black", face_text_to_camera=True, object_position="unspecified"):
         entry = c.lookup("identities", identity, "product")
         if entry is None:
             raise client.GreymonkeyError("Select an object identity in Scene Object; use the existing Random Scene node for unconstrained random objects.")
@@ -139,6 +139,23 @@ class GreymonkeySceneObjectV2:
             if item.get("color"): colors[item["id"]] = {"hex": item["color"]}
             if item.get("weight", 1) != 1: weights[item["id"]] = item["weight"]
         actor = dict(ref="object:" + str(unique_id or entry["id"]), type="product", selected_ids=list(dict.fromkeys(ids)), colors=colors, weights=weights, details={}, interactions=[], allow_random_props=False, allow_random_magic=False)
+        if not isinstance(display_text, str) or len(display_text) > 1000 or any(ord(ch) < 32 and ch not in "\n\t\r" for ch in display_text):
+            raise client.GreymonkeyError("Object text must contain at most 1,000 characters without control characters.")
+        allowed = self.INPUT_TYPES()["optional"]
+        for field, value in (("text_placement", text_placement), ("lettering", lettering), ("text_color", text_color), ("object_position", object_position)):
+            if value not in allowed[field][0]:
+                raise client.GreymonkeyError(f"Choose a supported {field.replace('_', ' ')}.")
+        if type(face_text_to_camera) is not bool:
+            raise client.GreymonkeyError("Text-facing-camera must be enabled or disabled.")
+        if object_position != "unspecified":
+            actor["details"]["position"] = object_position
+        if display_text.strip():
+            quoted = json.dumps(display_text, ensure_ascii=False)
+            actor["details"]["description"] = f'The {entry["name"]} bears the exact text {quoted}, {text_placement}, in {text_color} {lettering}.'
+            if face_text_to_camera:
+                actor["details"]["description"] += " Its text-bearing surface faces the camera, with the complete lettering visible and unobscured."
+        if entry["id"].startswith("text_surface_"):
+            actor["details"].setdefault("material", "paper" if entry["id"] == "text_surface_a4_paper" else "cardstock" if entry["id"] in ("text_surface_card", "text_surface_poster") else "a flat sign surface")
         previous = c.scene(previous_subjects)["subjects"] if previous_subjects is not None else []
         payload = c.envelope("object", subject=actor, relationship=relationship)
         return payload, c.scene(c.envelope("scene", mode="subjects", subjects=[*previous, actor]))

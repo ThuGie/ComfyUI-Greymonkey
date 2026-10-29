@@ -44176,6 +44176,89 @@
                     "body_plan": "biped",
                     "fantastical": true
                 }
+            },
+            {
+                "id": "text_surface_a4_paper",
+                "name": "A4 sheet of paper",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "interaction_tags": [
+                        "handheld",
+                        "paper",
+                        "text_surface"
+                    ]
+                }
+            },
+            {
+                "id": "text_surface_card",
+                "name": "Handheld message card",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "interaction_tags": [
+                        "handheld",
+                        "paper",
+                        "text_surface"
+                    ]
+                }
+            },
+            {
+                "id": "text_surface_poster",
+                "name": "Poster sheet",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "interaction_tags": [
+                        "handheld",
+                        "paper",
+                        "text_surface"
+                    ]
+                }
+            },
+            {
+                "id": "text_surface_sign",
+                "name": "Handheld sign",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "interaction_tags": [
+                        "handheld",
+                        "text_surface"
+                    ]
+                }
+            },
+            {
+                "id": "text_surface_whiteboard",
+                "name": "Small whiteboard",
+                "type": "product",
+                "types": [
+                    "product"
+                ],
+                "slot": "object_identity",
+                "colorable": true,
+                "capabilities": {
+                    "interaction_tags": [
+                        "handheld",
+                        "text_surface"
+                    ]
+                }
             }
         ],
         "ethnicities": [

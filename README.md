@@ -188,3 +188,7 @@ For a Git installation, run `git pull` inside `custom_nodes/ComfyUI-Greymonkey`,
 ## Scope
 
 This package is the ComfyUI client, bundled catalogs and frontend controls. The hosted PHP generator is not part of this repository. It does not download or load diffusion models, perform image generation, analyze reference images, or guarantee that a model renders every selected detail. Use a workflow suitable for your chosen checkpoint.
+
+## Text on objects
+
+Scene Object supports exact text on held or placed objects, labels, covers and screens. [Setup and hosting instructions](docs/text-on-objects.md).
