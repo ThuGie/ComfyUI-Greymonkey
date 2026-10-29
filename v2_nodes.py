@@ -320,13 +320,13 @@ class GreymonkeyPromptGeneratorV2:
     @classmethod
     def INPUT_TYPES(cls):
         data = client.catalog()
-        return {"required": {"model_id": ([m["id"] for m in data["models"] if m.get("comfyui", True)], {"default": data["defaults"]["model_id"]}), "content_mode": (list(CONTENT),), "generation_theme": (data["settings"].get("generation_theme", ["mixed", "everyday", "fantasy"]),), "art_style": (style_choices(data),), "detail_level": (["rich", "standard"],), "background": (["environment", "white"],), "pose_mode": (["random", "static"],), "aspect_ratio": (data["settings"]["aspect_ratio"],), "quality": (["recommended", "quick", "quality"],), "seed": ("INT", {"default": 0, "min": 0, "max": 2147483647, "control_after_generate": True}), "scene": (SCENE,)}, "optional": {"capture_settings": ("GREYMONKEY_CAPTURE",)}}
+        return {"required": {"model_id": ([m["id"] for m in data["models"] if m.get("comfyui", True)], {"default": data["defaults"]["model_id"]}), "content_mode": (list(CONTENT),), "generation_theme": (data["settings"].get("generation_theme", ["mixed", "everyday", "fantasy"]),), "art_style": (style_choices(data),), "detail_level": (["rich", "standard"],), "background": (["environment", "white"],), "pose_mode": (["random", "static"],), "aspect_ratio": (data["settings"]["aspect_ratio"],), "quality": (["recommended", "quick", "quality"],), "seed": ("INT", {"default": 0, "min": 0, "max": 2147483647, "control_after_generate": True}), "scene": (SCENE,)}, "optional": {"capture_settings": ("GREYMONKEY_CAPTURE",), "scene_settings": ("GREYMONKEY_SCENE_SETTINGS",)}}
 
     @classmethod
     def VALIDATE_INPUTS(cls, model_id):
         return True if isinstance(model_id, str) and model_id else "Choose a model ID"
 
-    def generate(self, model_id, content_mode, generation_theme, art_style, detail_level, background, pose_mode, aspect_ratio, quality, seed, scene, capture_settings=None):
+    def generate(self, model_id, content_mode, generation_theme, art_style, detail_level, background, pose_mode, aspect_ratio, quality, seed, scene, capture_settings=None, scene_settings=None):
         if type(seed) is not int or not 0 <= seed <= 2147483647:
             raise client.GreymonkeyError("Prompt seed must be between 0 and 2147483647.")
         recipe = c.scene(scene)
@@ -352,6 +352,9 @@ class GreymonkeyPromptGeneratorV2:
             if not isinstance(ids, list) or len(ids) > 32 or any(not isinstance(i, str) for i in ids):
                 raise client.GreymonkeyError("Malformed Camera Style output.")
             payload["global_detail_ids"] = list(dict.fromkeys(ids))
+        if scene_settings is not None:
+            from .scene_nodes import apply_settings
+            apply_settings(scene_settings, payload)
         cat = client.catalog()
         dataset = cat.get("dataset_version") or cat.get("catalog_pagination", {}).get("dataset_version", "bundled")
         key = c.cache_key(payload, [dataset, cat.get("generator_version")])
@@ -365,7 +368,7 @@ class GreymonkeyPromptGeneratorV2:
         warnings = list(result["validation"]["warnings"])
         info = {k: result[k] for k in ("api_version", "model_id", "profile_version", "dataset_version", "generator_version", "seed", "validation", "model_settings") if k in result}
         info["creator_decisions"] = [{"subject_id": actor["id"], **actor["creator_resolution"]} for actor in result["scene"].get("subjects", []) if actor.get("creator_resolution")]
-        structured = c.envelope("result", submitted_recipe=recipe, submitted_request=payload, resolved_scene=result["scene"], response=result, capture_settings=capture_settings)
+        structured = c.envelope("result", submitted_recipe=recipe, submitted_request=payload, resolved_scene=result["scene"], response=result, capture_settings=capture_settings, scene_settings=scene_settings)
         return {"ui": {"greymonkey_text": [result["positive_prompt"], result["negative_prompt"]], "greymonkey_warnings": warnings}, "result": (result["positive_prompt"], result["negative_prompt"], seed, json.dumps(info, ensure_ascii=False, indent=2), structured)}
 
 

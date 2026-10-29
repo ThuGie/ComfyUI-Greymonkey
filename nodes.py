@@ -312,7 +312,7 @@ class GreymonkeySaveImage:
             record["encoded_negative_prompt"] = encoded_negative_prompt
         if generation_result is not None:
             from .contracts import check
-            structured = check(generation_result, "result", {"submitted_recipe", "submitted_request", "resolved_scene", "response", "capture_settings"})
+            structured = check(generation_result, "result", {"submitted_recipe", "submitted_request", "resolved_scene", "response", "capture_settings", "scene_settings"})
             record["generation_result"] = structured
         # Copy existing metadata: keep workflow and other extensions' records intact.
         metadata = dict(extra_pnginfo or {})
@@ -367,7 +367,7 @@ class GreymonkeySaveImageV2(GreymonkeySaveImage):
     def save_images(self, images, positive_prompt=None, negative_prompt=None, generation_info=None, generation_result=None, **kwargs):
         if generation_result is not None:
             from .contracts import check
-            result = check(generation_result, "result", {"submitted_recipe", "submitted_request", "resolved_scene", "response", "capture_settings"})
+            result = check(generation_result, "result", {"submitted_recipe", "submitted_request", "resolved_scene", "response", "capture_settings", "scene_settings"})
             response = result.get("response")
             if not isinstance(response, dict):
                 raise client.GreymonkeyError("Malformed generation result.")
@@ -445,5 +445,10 @@ NODE_DISPLAY_NAME_MAPPINGS["GreymonkeyLegacyRandomSceneV2"] = "Greymonkey Legacy
 
 from .v2_nodes import GreymonkeySceneObjectV2, GreymonkeyObjectDetailV2
 for cls, label in [(GreymonkeySceneObjectV2, "Greymonkey Scene Object"), (GreymonkeyObjectDetailV2, "Greymonkey Object Detail")]:
+    NODE_CLASS_MAPPINGS[cls.__name__] = cls
+    NODE_DISPLAY_NAME_MAPPINGS[cls.__name__] = label
+
+from .scene_nodes import GreymonkeySceneSettingsV2, GreymonkeyEnvironmentDetailV2, GreymonkeyScenePlacementV2
+for cls, label in [(GreymonkeySceneSettingsV2, "Greymonkey Scene Settings"), (GreymonkeyEnvironmentDetailV2, "Greymonkey Environment Detail"), (GreymonkeyScenePlacementV2, "Greymonkey Scene Placement")]:
     NODE_CLASS_MAPPINGS[cls.__name__] = cls
     NODE_DISPLAY_NAME_MAPPINGS[cls.__name__] = label

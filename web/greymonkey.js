@@ -91,7 +91,7 @@ function filterDetail(node) {
     const category = node.widgets.find(w => w.name === "category")?.value;
     const option = node.widgets.find(w => w.name === "option");
     const entries = (option?.options?.greymonkeyEntries || []).filter(e=>node.comfyClass!=="GreymonkeyObjectDetailV2" || (e.types||[e.type]).includes("product") && e.slot!=="object_identity");
-    if (option) choices(option, ["Random", ...entries.filter(e => (e.category_id || e.category) === id(category) || e.category === category).map(e => `${e.name} [${e.id}]`)]);
+    if (option) choices(option, [...(node.comfyClass === "GreymonkeyEnvironmentDetailV2" ? [] : ["Random"]), ...entries.filter(e => (e.category_id || e.category) === id(category) || e.category === category).map(e => `${e.name} [${e.id}]`)]);
     const entry = entries.find(e => e.id === id(option?.value));
     hidden(node.widgets.find(w => w.name === "color"), !entry?.colorable);
     const weight=node.widgets.find(w=>w.name==="weight"),models=connectedModels(node);
@@ -152,10 +152,11 @@ async function refreshAll() {
                     choices(widget, data.models.filter(m => m.comfyui !== false).map(m => m.id)); continue;
                 }
                 if (widget.name === "art_style") entries = data.art_styles;
-                const group = {identity:"identities", related_object:"identities", magic:"magic", ethnicity:"ethnicities", hair_color:"hair_colors", hair_length:"hair_lengths", option:"details", detail_1:"details", detail_2:"details", detail_3:"details", detail_4:"details"}[widget.name];
+                const group = {location:"locations", time_of_day:"times", identity:"identities", related_object:"identities", magic:"magic", ethnicity:"ethnicities", hair_color:"hair_colors", hair_length:"hair_lengths", option:"details", detail_1:"details", detail_2:"details", detail_3:"details", detail_4:"details"}[widget.name];
                 if (group) entries = data.controls?.[group];
+                if (node.comfyClass === "GreymonkeyEnvironmentDetailV2" && widget.name === "option") entries = (data.controls?.global_details || []).filter(e => !["location", "time_of_day"].includes(e.slot));
                 if (widget.name === "category") {
-                    choices(widget, [...new Set((data.controls?.details || []).map(e => `${e.category || "Other"} [${e.category_id || e.category || "Other"}]`))].sort()); continue;
+                    choices(widget, [...new Set((node.comfyClass === "GreymonkeyEnvironmentDetailV2" ? (data.controls?.global_details || []).filter(e => !["location", "time_of_day"].includes(e.slot)) : (data.controls?.details || [])).map(e => `${e.category || "Other"} [${e.category_id || e.category || "Other"}]`))].sort()); continue;
                 }
                 if (!Array.isArray(entries)) continue;
                 if (["related_object", "magic"].includes(widget.name)) defaults = ["None", "Random"];
@@ -329,7 +330,7 @@ app.registerExtension({
                 const widget=this.widgets.find(w=>w.name==="identity"),callback=widget?.callback;
                 if(widget)widget.callback=value=>{callback?.call(widget,value);filterRelationships(this);};
             }
-            if(["GreymonkeySubjectDetailV2","GreymonkeyObjectDetailV2"].includes(nodeData.name)) {
+            if(["GreymonkeySubjectDetailV2","GreymonkeyObjectDetailV2","GreymonkeyEnvironmentDetailV2"].includes(nodeData.name)) {
                 this.greymonkeyFilter=()=>filterDetail(this);
                 for(const name of ["category","option"]) {
                     const widget=this.widgets.find(w=>w.name===name),callback=widget?.callback;

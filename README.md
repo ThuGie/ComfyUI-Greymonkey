@@ -192,3 +192,7 @@ This package is the ComfyUI client, bundled catalogs and frontend controls. The 
 ## Text on objects
 
 Scene Object supports exact text on held or placed objects, labels, covers and screens. [Setup and hosting instructions](docs/text-on-objects.md).
+
+## Scene locations and object placement
+
+Use **Scene Settings** for location/time, chain **Environment Detail** nodes for shared conditions, and chain **Scene Placement** nodes to add independently configured objects. [Full scene-system guide](docs/scene-system.md).
